@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- v26609 -->
+
+
+  <title>Upgrading from Cortex to EXP – VEX Library</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="">
+
+  <meta name="description" content="This article is for those who currently are using the Cortex System and are upgrading / considering upgrading to the VEX EXP System. The..."><meta property="og:image" content="https://kb.vex.com/hc/theming_assets/01HZPAVQWF13AR5SN8W36HJVMD">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VEX Library">
+<meta property="og:title" content="Upgrading from Cortex to EXP">
+<meta property="og:description" content="This article is for those who currently are using the Cortex System and are upgrading / considering upgrading to the VEX EXP System. The purpose of this article is to cover what contents from Corte...">
+<meta property="og:url" content="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP">
+<link rel="canonical" href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP">
+<link rel="alternate" hreflang="ar" href="https://kb.vex.com/hc/ar/articles/13559808395412-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D8%A9-%D9%85%D9%86-Cortex-%D8%A5%D9%84%D9%89-EXP">
+<link rel="alternate" hreflang="bn" href="https://kb.vex.com/hc/bn/articles/13559808395412-%E0%A6%95%E0%A6%B0-%E0%A6%9F%E0%A7%87%E0%A6%95-%E0%A6%B8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-EXP-%E0%A6%A4%E0%A7%87-%E0%A6%86%E0%A6%AA%E0%A6%97-%E0%A6%B0%E0%A7%87%E0%A6%A1-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B9%E0%A6%9A-%E0%A6%9B%E0%A7%87">
+<link rel="alternate" hreflang="cs" href="https://kb.vex.com/hc/cs/articles/13559808395412-Upgrade-z-Cortex-na-EXP">
+<link rel="alternate" hreflang="de" href="https://kb.vex.com/hc/de/articles/13559808395412-Upgrade-von-Cortex-auf-EXP">
+<link rel="alternate" hreflang="en-us" href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP">
+<link rel="alternate" hreflang="es" href="https://kb.vex.com/hc/es/articles/13559808395412-Actualizaci%C3%B3n-de-Cortex-a-EXP">
+<link rel="alternate" hreflang="es-419" href="https://kb.vex.com/hc/es-419/articles/13559808395412-Actualizaci%C3%B3n-de-Cortex-a-EXP">
+<link rel="alternate" hreflang="fi" href="https://kb.vex.com/hc/fi/articles/13559808395412-P%C3%A4ivitys-Cortexista-EXP-hen">
+<link rel="alternate" hreflang="fr" href="https://kb.vex.com/hc/fr/articles/13559808395412-Mise-%C3%A0-niveau-de-Cortex-vers-EXP">
+<link rel="alternate" hreflang="hi" href="https://kb.vex.com/hc/hi/articles/13559808395412-%E0%A4%95%E0%A5%89%E0%A4%B0-%E0%A4%9F%E0%A5%87%E0%A4%95-%E0%A4%B8-%E0%A4%B8%E0%A5%87-EXP-%E0%A4%A4%E0%A4%95-%E0%A4%85%E0%A4%AA%E0%A4%97-%E0%A4%B0%E0%A5%87%E0%A4%A1-%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A4%BE">
+<link rel="alternate" hreflang="hu" href="https://kb.vex.com/hc/hu/articles/13559808395412-Friss%C3%ADt%C3%A9s-Cortexr%C5%91l-EXP-re">
+<link rel="alternate" hreflang="id" href="https://kb.vex.com/hc/id/articles/13559808395412-Upgrade-dari-Cortex-ke-EXP">
+<link rel="alternate" hreflang="it" href="https://kb.vex.com/hc/it/articles/13559808395412-Aggiornamento-da-Cortex-a-EXP">
+<link rel="alternate" hreflang="ja" href="https://kb.vex.com/hc/ja/articles/13559808395412-Cortex-%E3%81%8B%E3%82%89-EXP-%E3%81%B8%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89">
+<link rel="alternate" hreflang="kk" href="https://kb.vex.com/hc/kk/articles/13559808395412-Cortex-%D1%82%D0%B5%D0%BD-EXP-%D0%B3%D0%B5-%D0%B4%D0%B5%D0%B9%D1%96%D0%BD-%D0%B6%D0%B0%D2%A3%D0%B0%D1%80%D1%82%D1%83">
+<link rel="alternate" hreflang="ko" href="https://kb.vex.com/hc/ko/articles/13559808395412-Cortex%EC%97%90%EC%84%9C-EXP%EB%A1%9C-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C">
+<link rel="alternate" hreflang="lt" href="https://kb.vex.com/hc/lt/articles/13559808395412-Atnaujinimas-i%C5%A1-Cortex-%C4%AF-EXP">
+<link rel="alternate" hreflang="lv" href="https://kb.vex.com/hc/lv/articles/13559808395412-Jaunin%C4%81%C5%A1ana-no-Cortex-uz-EXP">
+<link rel="alternate" hreflang="ml" href="https://kb.vex.com/hc/ml/articles/13559808395412-%E0%B4%95%E0%B5%8B%E0%B5%BC%E0%B4%9F-%E0%B4%9F%E0%B5%86%E0%B4%95-%E0%B4%B8%E0%B4%BF%E0%B5%BD-%E0%B4%A8%E0%B4%BF%E0%B4%A8-%E0%B4%A8-EXP-%E0%B4%B2%E0%B5%87%E0%B4%95-%E0%B4%95-%E0%B4%85%E0%B4%AA-%E0%B4%97-%E0%B4%B0%E0%B5%87%E0%B4%A1-%E0%B4%9A%E0%B5%86%E0%B4%AF-%E0%B4%AF%E0%B5%81%E0%B4%A8-%E0%B4%A8%E0%B5%81">
+<link rel="alternate" hreflang="nl" href="https://kb.vex.com/hc/nl/articles/13559808395412-Upgraden-van-Cortex-naar-EXP">
+<link rel="alternate" hreflang="pl" href="https://kb.vex.com/hc/pl/articles/13559808395412-Aktualizacja-z-Cortexu-do-EXP">
+<link rel="alternate" hreflang="pt" href="https://kb.vex.com/hc/pt/articles/13559808395412-Atualizando-do-Cortex-para-o-EXP">
+<link rel="alternate" hreflang="ru" href="https://kb.vex.com/hc/ru/articles/13559808395412-%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81-Cortex-%D0%B4%D0%BE-EXP">
+<link rel="alternate" hreflang="th" href="https://kb.vex.com/hc/th/articles/13559808395412-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%B1%E0%B8%9E%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81-Cortex-%E0%B9%80%E0%B8%9B-%E0%B8%99-EXP">
+<link rel="alternate" hreflang="tr" href="https://kb.vex.com/hc/tr/articles/13559808395412-Cortex-ten-EXP-ye-y%C3%BCkseltme">
+<link rel="alternate" hreflang="uk" href="https://kb.vex.com/hc/uk/articles/13559808395412-%D0%9E%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B7-Cortex-%D0%B4%D0%BE-EXP">
+<link rel="alternate" hreflang="vi" href="https://kb.vex.com/hc/vi/articles/13559808395412-N%C3%A2ng-c%E1%BA%A5p-t%E1%BB%AB-Cortex-l%C3%AAn-EXP">
+<link rel="alternate" hreflang="x-default" href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP">
+<link rel="alternate" hreflang="zh" href="https://kb.vex.com/hc/zh-tw/articles/13559808395412-%E5%BE%9E-Cortex-%E5%8D%87%E7%B4%9A%E5%88%B0-EXP">
+<link rel="alternate" hreflang="zh-cn" href="https://kb.vex.com/hc/zh-cn/articles/13559808395412-%E4%BB%8E-Cortex-%E5%8D%87%E7%BA%A7%E5%88%B0-EXP">
+<link rel="alternate" hreflang="zh-tw" href="https://kb.vex.com/hc/zh-tw/articles/13559808395412-%E5%BE%9E-Cortex-%E5%8D%87%E7%B4%9A%E5%88%B0-EXP">
+
+  <link rel="stylesheet" href="./Cortex to EXP – VEX_files/application-43dc745333a4019d79cea53328730603.css" media="all" id="stylesheet">
+    <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+    <link rel="stylesheet" href="./Cortex to EXP – VEX_files/theming_v1_support-e05586b61178dcde2a13a3d323525a18.css" media="all">
+  <link rel="stylesheet" type="text/css" href="./Cortex to EXP – VEX_files/style.css">
+
+  <link rel="icon" type="image/x-icon" href="https://kb.vex.com/hc/theming_assets/01HZPAVR1K5R5RDV2J60YCNHD6">
+
+    <script src="./Cortex to EXP – VEX_files/hm.js.download"></script><script src="./Cortex to EXP – VEX_files/jquery-09d07e20ce042ef10e301661ad1f316c.js.download"></script>
+    
+    <script async="" src="./Cortex to EXP – VEX_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-40KSCHDXC7');
+</script>
+
+
+  
+<!-- Primary Meta Tags -->
+<title>VEX Library</title>
+<meta name="title" content="VEX Library">
+<meta name="description" content="Welcome to the VEX Library, a library of information about all things VEX.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kb.vex.com/hc/en-us">
+<meta property="og:title" content="VEX Library">
+<meta property="og:description" content="Welcome to the VEX Library, a library of information about all things VEX.">
+<meta property="og:image" content="https://theme.zdassets.com/theme_assets/9417421/309cb1bfd0e899111da097733d0905e1a630301e.png?v=222">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://kb.vex.com/hc/en-us">
+<meta property="twitter:title" content="VEX Library">
+<meta property="twitter:description" content="Welcome to the VEX Library, a library of information about all things VEX.">
+<meta property="twitter:image" content="https://theme.zdassets.com/theme_assets/9417421/309cb1bfd0e899111da097733d0905e1a630301e.png?v=22">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./Cortex to EXP – VEX_files/css" rel="stylesheet"><link rel="stylesheet" href="./Cortex to EXP – VEX_files/all.css"><link rel="stylesheet" href="./Cortex to EXP – VEX_files/github.min.css"><link rel="stylesheet" href="./Cortex to EXP – VEX_files/magnific-popup.css"><script src="./Cortex to EXP – VEX_files/jquery.magnific-popup.min.js.download"></script><script src="./Cortex to EXP – VEX_files/highlight.min.js.download"></script><script src="./Cortex to EXP – VEX_files/bootstrap.bundle.min.js.download" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><link href="./Cortex to EXP – VEX_files/jquery.fancybox.min.css" rel="stylesheet"><script src="./Cortex to EXP – VEX_files/jquery.fancybox.min.js.download"></script><script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?16b1fd168868558f463da8fe2aa0e4dd";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script><script type="text/javascript" src="./Cortex to EXP – VEX_files/script.js.download"></script><style>/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.hjkkBUi48PQ20mlsqeQtBQzu9Uioa_BY{
+  position:relative;
+  border:1px solid #d8dcde;
+  border-radius:4px;
+  background-color:#fff;
+  padding:20px 40px;
+  line-height:1.42857;
+  color:#68737d;
+  font-size:14px;
+}
+
+.oPikK3G2Tkv7yYgW_phm8QoqS9GeopSy{
+  display:block;
+  margin:0;
+  color:#2f3941;
+  font-weight:600;
+}
+
+.j4PjRpHW7lSNqzFUVkdiwquA5yhyJevI{
+  margin:10px 0 0;
+}
+
+.hjkkBUi48PQ20mlsqeQtBQzu9Uioa_BY.j_jUk6npo7qBPZXKDV16gVpuK7l9oIHS{
+  direction:rtl;
+}
+
+.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL{
+  display:block;
+  position:absolute;
+  top:4px;
+  right:4px;
+  transition:background-color .1s ease-in-out;
+  border:none;
+  border-radius:50%;
+  background-color:transparent;
+  cursor:pointer;
+  width:28px;
+  height:28px;
+  overflow:hidden;
+  text-decoration:none;
+  font-size:0;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+          user-select:none;
+}
+
+.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:after,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:before{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  transition:opacity .25s ease-in-out;
+  background-repeat:no-repeat;
+  background-position:50%;
+  background-size:12px;
+  content:"";
+}
+
+.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:before{
+  opacity:1;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%2368737d%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:after{
+  opacity:0;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%232f3941%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Gm7fuq8AqgoCjbkP6i5Vgq0LBz5aQUta:before,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Qt6yLNXIu6VkEq6Q8Cb7w8fVqEvVWQzq:before,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:focus:before,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:hover:before{
+  opacity:0;
+}
+
+.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Gm7fuq8AqgoCjbkP6i5Vgq0LBz5aQUta:after,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Qt6yLNXIu6VkEq6Q8Cb7w8fVqEvVWQzq:after,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:focus:after,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:hover:after{
+  opacity:1;
+}
+
+.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Gm7fuq8AqgoCjbkP6i5Vgq0LBz5aQUta,.RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:focus{
+  outline:none;
+  background-color:color-mod(#68737d alpha(15%));
+}
+
+.hjkkBUi48PQ20mlsqeQtBQzu9Uioa_BY.j_jUk6npo7qBPZXKDV16gVpuK7l9oIHS .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL{
+  right:auto;
+  left:4px;
+}
+
+.FhX7nbqWv2hn1LUryjQwcA562pfet9cN:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%23d93f4c%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.FhX7nbqWv2hn1LUryjQwcA562pfet9cN:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%23681219%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.X7J83wFig6JDZULO8MWowIxp6uStzirj:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%23228f67%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.X7J83wFig6JDZULO8MWowIxp6uStzirj:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%230b3b29%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:before{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%23ad5918%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:after{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 color=%27%23703815%27%3E%3Cpath stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27m3 9 6-6m0 6L3 3%27/%3E%3C/svg%3E");
+}
+
+.FhX7nbqWv2hn1LUryjQwcA562pfet9cN:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Gm7fuq8AqgoCjbkP6i5Vgq0LBz5aQUta,.FhX7nbqWv2hn1LUryjQwcA562pfet9cN:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:focus{
+  background-color:color-mod(#cc3340 alpha(15%));
+}
+
+.X7J83wFig6JDZULO8MWowIxp6uStzirj:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Gm7fuq8AqgoCjbkP6i5Vgq0LBz5aQUta,.X7J83wFig6JDZULO8MWowIxp6uStzirj:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:focus{
+  background-color:color-mod(#038153 alpha(15%));
+}
+
+.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Gm7fuq8AqgoCjbkP6i5Vgq0LBz5aQUta,.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm:not(.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq) .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:focus{
+  background-color:color-mod(#ad5918 alpha(15%));
+}
+
+.hjkkBUi48PQ20mlsqeQtBQzu9Uioa_BY .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL.Gm7fuq8AqgoCjbkP6i5Vgq0LBz5aQUta:active,.hjkkBUi48PQ20mlsqeQtBQzu9Uioa_BY .RcaEiGX0A3kyCVPSSydgAyOGGRc5MylL:focus:active{
+  background-color:transparent;
+}
+
+.zuqb1_E1eW6vR2QIOcifg43IL35dkVtW{
+  background-color:#f8f9f9;
+}
+
+.A7206VdtAqwtFIm3sAvVw_FSKzfgZ6no{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 color=%27%2368737d%27%3E%3Cg stroke=%27currentColor%27%3E%3Ccircle cx=%277.5%27 cy=%278.5%27 r=%277%27 fill=%27none%27/%3E%3Cpath stroke-linecap=%27round%27 d=%27M7.5 12.5V8%27/%3E%3C/g%3E%3Ccircle cx=%277.5%27 cy=%275%27 r=%271%27 fill=%27currentColor%27/%3E%3C/svg%3E");
+}
+
+.FhX7nbqWv2hn1LUryjQwcA562pfet9cN{
+  border-color:#f5b5ba;
+  background-color:#fff0f1;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 color=%27%23cc3340%27%3E%3Cg fill=%27none%27 stroke=%27currentColor%27%3E%3Ccircle cx=%277.5%27 cy=%278.5%27 r=%277%27/%3E%3Cpath stroke-linecap=%27round%27 d=%27M7.5 4.5V9%27/%3E%3C/g%3E%3Ccircle cx=%277.5%27 cy=%2712%27 r=%271%27 fill=%27currentColor%27/%3E%3C/svg%3E");
+  color:#8c232c;
+}
+
+.X7J83wFig6JDZULO8MWowIxp6uStzirj{
+  border-color:#aecfc2;
+  background-color:#edf8f4;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 color=%27%23038153%27%3E%3Cg fill=%27none%27 stroke=%27currentColor%27%3E%3Cpath stroke-linecap=%27round%27 stroke-linejoin=%27round%27 d=%27m4 9 2.5 2.5 5-5%27/%3E%3Ccircle cx=%277.5%27 cy=%278.5%27 r=%277%27/%3E%3C/g%3E%3C/svg%3E");
+  color:#186146;
+}
+
+.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm{
+  border-color:#fed6a8;
+  background-color:#fff7ed;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 color=%27%23ad5918%27%3E%3Cpath fill=%27none%27 stroke=%27currentColor%27 stroke-linecap=%27round%27 d=%27M.88 13.77 7.06 1.86c.19-.36.7-.36.89 0l6.18 11.91c.17.33-.07.73-.44.73H1.32c-.37 0-.61-.4-.44-.73zM7.5 6v3.5%27/%3E%3Ccircle cx=%277.5%27 cy=%2712%27 r=%271%27 fill=%27currentColor%27/%3E%3C/svg%3E");
+  color:#ad5918;
+}
+
+.FhX7nbqWv2hn1LUryjQwcA562pfet9cN,.A7206VdtAqwtFIm3sAvVw_FSKzfgZ6no,.X7J83wFig6JDZULO8MWowIxp6uStzirj,.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm{
+  background-repeat:no-repeat;
+  background-position:24px 22px;
+  padding-left:50px;
+}
+
+.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq{
+  box-shadow:0 20px 28px 0 color-mod(#17494d alpha(15%));
+}
+
+.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq.FhX7nbqWv2hn1LUryjQwcA562pfet9cN,.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq.X7J83wFig6JDZULO8MWowIxp6uStzirj,.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm{
+  border-color:#d8dcde;
+  background-color:#fff;
+  color:#49545c;
+}
+
+.FhX7nbqWv2hn1LUryjQwcA562pfet9cN .oPikK3G2Tkv7yYgW_phm8QoqS9GeopSy{
+  color:#681219;
+}
+
+.X7J83wFig6JDZULO8MWowIxp6uStzirj .oPikK3G2Tkv7yYgW_phm8QoqS9GeopSy{
+  color:#0b3b29;
+}
+
+.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm .oPikK3G2Tkv7yYgW_phm8QoqS9GeopSy{
+  color:#703815;
+}
+
+.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq.FhX7nbqWv2hn1LUryjQwcA562pfet9cN .oPikK3G2Tkv7yYgW_phm8QoqS9GeopSy{
+  color:#cc3340;
+}
+
+.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq.X7J83wFig6JDZULO8MWowIxp6uStzirj .oPikK3G2Tkv7yYgW_phm8QoqS9GeopSy{
+  color:#038153;
+}
+
+.FMYCmvXtsS6N5SRs_pF88gAhOnLqIHYq.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm .oPikK3G2Tkv7yYgW_phm8QoqS9GeopSy{
+  color:#ad5918;
+}
+
+.FhX7nbqWv2hn1LUryjQwcA562pfet9cN.j_jUk6npo7qBPZXKDV16gVpuK7l9oIHS,.A7206VdtAqwtFIm3sAvVw_FSKzfgZ6no.j_jUk6npo7qBPZXKDV16gVpuK7l9oIHS,.X7J83wFig6JDZULO8MWowIxp6uStzirj.j_jUk6npo7qBPZXKDV16gVpuK7l9oIHS,.XnWwn1n9xSK69XEGcYZlQltSvmMvsbCm.j_jUk6npo7qBPZXKDV16gVpuK7l9oIHS{
+  background-position:calc(100% - 24px) 22px;
+  padding-right:50px;
+  padding-left:40px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9AemVuZGVza2dhcmRlbi9jc3MtY2FsbG91dHMvZGlzdC9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0VBS0U7O0FBRUY7RUFDRSxpQkFBaUI7RUFDakIsd0JBQXdCO0VBQ3hCLGlCQUFpQjtFQUNqQixxQkFBcUI7RUFDckIsaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixRQUFRO0VBQ1IsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixPQUFPO0VBQ1AsU0FBUztFQUNULDJDQUEyQztFQUMzQyxXQUFXO0VBQ1gsaUJBQWlCO0VBQ2pCLDRCQUE0QjtFQUM1QixjQUFjO0VBQ2QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLFdBQVc7RUFDWCx3QkFBd0I7S0FDckIscUJBQXFCO1VBQ2hCLGdCQUFnQjtBQUMxQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsS0FBSztFQUNMLE9BQU87RUFDUCxRQUFRO0VBQ1IsTUFBTTtFQUNOLG1DQUFtQztFQUNuQywyQkFBMkI7RUFDM0IsdUJBQXVCO0VBQ3ZCLG9CQUFvQjtFQUNwQixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxTQUFTO0VBQ1Qsd0RBQXFPO0FBQ3ZPOztBQUVBO0VBQ0UsU0FBUztFQUNULHdEQUFxTztBQUN2Tzs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTtFQUNFLFlBQVk7RUFDWiw4Q0FBOEM7QUFDaEQ7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsUUFBUTtBQUNWOztBQUVBO0VBQ0Usd0RBQXFPO0FBQ3ZPOztBQUVBO0VBQ0Usd0RBQXFPO0FBQ3ZPOztBQUVBO0VBQ0Usd0RBQXFPO0FBQ3ZPOztBQUVBO0VBQ0Usd0RBQXFPO0FBQ3ZPOztBQUVBO0VBQ0Usd0RBQXFPO0FBQ3ZPOztBQUVBO0VBQ0Usd0RBQXFPO0FBQ3ZPOztBQUVBO0VBQ0UsOENBQThDO0FBQ2hEOztBQUVBO0VBQ0UsOENBQThDO0FBQ2hEOztBQUVBO0VBQ0UsOENBQThDO0FBQ2hEOztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0Usd0JBQXdCO0FBQzFCOztBQUVBO0VBQ0Usd0RBQXVWO0FBQ3pWOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4Qix3REFBdVY7RUFDdlYsYUFBYTtBQUNmOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4Qix5REFBNlQ7RUFDN1QsYUFBYTtBQUNmOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4Qix5REFBc1k7RUFDdFksYUFBYTtBQUNmOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLDZCQUE2QjtFQUM3QixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxzREFBc0Q7QUFDeEQ7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIscUJBQXFCO0VBQ3JCLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLDBDQUEwQztFQUMxQyxrQkFBa0I7RUFDbEIsaUJBQWlCO0FBQ25CIiwic291cmNlc0NvbnRlbnQiOlsiLyohXG4gKiBDb3B5cmlnaHQgWmVuZGVzaywgSW5jLlxuICpcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjBcbiAqIGZvdW5kIGF0IGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMC5cbiAqL1xuXG4uYy1jYWxsb3V0e1xuICBwb3NpdGlvbjpyZWxhdGl2ZTtcbiAgYm9yZGVyOjFweCBzb2xpZCAjZDhkY2RlO1xuICBib3JkZXItcmFkaXVzOjRweDtcbiAgYmFja2dyb3VuZC1jb2xvcjojZmZmO1xuICBwYWRkaW5nOjIwcHggNDBweDtcbiAgbGluZS1oZWlnaHQ6MS40Mjg1NztcbiAgY29sb3I6IzY4NzM3ZDtcbiAgZm9udC1zaXplOjE0cHg7XG59XG5cbi5jLWNhbGxvdXRfX3RpdGxle1xuICBkaXNwbGF5OmJsb2NrO1xuICBtYXJnaW46MDtcbiAgY29sb3I6IzJmMzk0MTtcbiAgZm9udC13ZWlnaHQ6NjAwO1xufVxuXG4uYy1jYWxsb3V0X19wYXJhZ3JhcGh7XG4gIG1hcmdpbjoxMHB4IDAgMDtcbn1cblxuLmMtY2FsbG91dC5pcy1ydGx7XG4gIGRpcmVjdGlvbjpydGw7XG59XG5cbi5jLWNhbGxvdXRfX2Nsb3Nle1xuICBkaXNwbGF5OmJsb2NrO1xuICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgdG9wOjRweDtcbiAgcmlnaHQ6NHB4O1xuICB0cmFuc2l0aW9uOmJhY2tncm91bmQtY29sb3IgLjFzIGVhc2UtaW4tb3V0O1xuICBib3JkZXI6bm9uZTtcbiAgYm9yZGVyLXJhZGl1czo1MCU7XG4gIGJhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnQ7XG4gIGN1cnNvcjpwb2ludGVyO1xuICB3aWR0aDoyOHB4O1xuICBoZWlnaHQ6MjhweDtcbiAgb3ZlcmZsb3c6aGlkZGVuO1xuICB0ZXh0LWRlY29yYXRpb246bm9uZTtcbiAgZm9udC1zaXplOjA7XG4gIC13ZWJraXQtdXNlci1zZWxlY3Q6bm9uZTtcbiAgICAgLW1vei11c2VyLXNlbGVjdDpub25lO1xuICAgICAgICAgIHVzZXItc2VsZWN0Om5vbmU7XG59XG5cbi5jLWNhbGxvdXRfX2Nsb3NlOmFmdGVyLC5jLWNhbGxvdXRfX2Nsb3NlOmJlZm9yZXtcbiAgZGlzcGxheTpibG9jaztcbiAgcG9zaXRpb246YWJzb2x1dGU7XG4gIHRvcDowO1xuICByaWdodDowO1xuICBib3R0b206MDtcbiAgbGVmdDowO1xuICB0cmFuc2l0aW9uOm9wYWNpdHkgLjI1cyBlYXNlLWluLW91dDtcbiAgYmFja2dyb3VuZC1yZXBlYXQ6bm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOjUwJTtcbiAgYmFja2dyb3VuZC1zaXplOjEycHg7XG4gIGNvbnRlbnQ6XCJcIjtcbn1cblxuLmMtY2FsbG91dF9fY2xvc2U6YmVmb3Jle1xuICBvcGFjaXR5OjE7XG4gIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiZGF0YTppbWFnZS9zdmcreG1sO2NoYXJzZXQ9dXRmLTgsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgd2lkdGg9JzEyJyBoZWlnaHQ9JzEyJyBjb2xvcj0nJTIzNjg3MzdkJyUzRSUzQ3BhdGggc3Ryb2tlPSdjdXJyZW50Q29sb3InIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgZD0nbTMgOSA2LTZtMCA2TDMgMycvJTNFJTNDL3N2ZyUzRVwiKTtcbn1cblxuLmMtY2FsbG91dF9fY2xvc2U6YWZ0ZXJ7XG4gIG9wYWNpdHk6MDtcbiAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCJkYXRhOmltYWdlL3N2Zyt4bWw7Y2hhcnNldD11dGYtOCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB3aWR0aD0nMTInIGhlaWdodD0nMTInIGNvbG9yPSclMjMyZjM5NDEnJTNFJTNDcGF0aCBzdHJva2U9J2N1cnJlbnRDb2xvcicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBkPSdtMyA5IDYtNm0wIDZMMyAzJy8lM0UlM0Mvc3ZnJTNFXCIpO1xufVxuXG4uYy1jYWxsb3V0X19jbG9zZS5pcy1mb2N1c2VkOmJlZm9yZSwuYy1jYWxsb3V0X19jbG9zZS5pcy1ob3ZlcmVkOmJlZm9yZSwuYy1jYWxsb3V0X19jbG9zZTpmb2N1czpiZWZvcmUsLmMtY2FsbG91dF9fY2xvc2U6aG92ZXI6YmVmb3Jle1xuICBvcGFjaXR5OjA7XG59XG5cbi5jLWNhbGxvdXRfX2Nsb3NlLmlzLWZvY3VzZWQ6YWZ0ZXIsLmMtY2FsbG91dF9fY2xvc2UuaXMtaG92ZXJlZDphZnRlciwuYy1jYWxsb3V0X19jbG9zZTpmb2N1czphZnRlciwuYy1jYWxsb3V0X19jbG9zZTpob3ZlcjphZnRlcntcbiAgb3BhY2l0eToxO1xufVxuXG4uYy1jYWxsb3V0X19jbG9zZS5pcy1mb2N1c2VkLC5jLWNhbGxvdXRfX2Nsb3NlOmZvY3Vze1xuICBvdXRsaW5lOm5vbmU7XG4gIGJhY2tncm91bmQtY29sb3I6Y29sb3ItbW9kKCM2ODczN2QgYWxwaGEoMTUlKSk7XG59XG5cbi5jLWNhbGxvdXQuaXMtcnRsIC5jLWNhbGxvdXRfX2Nsb3Nle1xuICByaWdodDphdXRvO1xuICBsZWZ0OjRweDtcbn1cblxuLmMtY2FsbG91dC0tZXJyb3I6bm90KC5jLWNhbGxvdXQtLWRpYWxvZykgLmMtY2FsbG91dF9fY2xvc2U6YmVmb3Jle1xuICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImRhdGE6aW1hZ2Uvc3ZnK3htbDtjaGFyc2V0PXV0Zi04LCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxMicgY29sb3I9JyUyM2Q5M2Y0YyclM0UlM0NwYXRoIHN0cm9rZT0nY3VycmVudENvbG9yJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIGQ9J20zIDkgNi02bTAgNkwzIDMnLyUzRSUzQy9zdmclM0VcIik7XG59XG5cbi5jLWNhbGxvdXQtLWVycm9yOm5vdCguYy1jYWxsb3V0LS1kaWFsb2cpIC5jLWNhbGxvdXRfX2Nsb3NlOmFmdGVye1xuICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImRhdGE6aW1hZ2Uvc3ZnK3htbDtjaGFyc2V0PXV0Zi04LCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxMicgY29sb3I9JyUyMzY4MTIxOSclM0UlM0NwYXRoIHN0cm9rZT0nY3VycmVudENvbG9yJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIGQ9J20zIDkgNi02bTAgNkwzIDMnLyUzRSUzQy9zdmclM0VcIik7XG59XG5cbi5jLWNhbGxvdXQtLXN1Y2Nlc3M6bm90KC5jLWNhbGxvdXQtLWRpYWxvZykgLmMtY2FsbG91dF9fY2xvc2U6YmVmb3Jle1xuICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImRhdGE6aW1hZ2Uvc3ZnK3htbDtjaGFyc2V0PXV0Zi04LCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxMicgY29sb3I9JyUyMzIyOGY2NyclM0UlM0NwYXRoIHN0cm9rZT0nY3VycmVudENvbG9yJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIGQ9J20zIDkgNi02bTAgNkwzIDMnLyUzRSUzQy9zdmclM0VcIik7XG59XG5cbi5jLWNhbGxvdXQtLXN1Y2Nlc3M6bm90KC5jLWNhbGxvdXQtLWRpYWxvZykgLmMtY2FsbG91dF9fY2xvc2U6YWZ0ZXJ7XG4gIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiZGF0YTppbWFnZS9zdmcreG1sO2NoYXJzZXQ9dXRmLTgsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgd2lkdGg9JzEyJyBoZWlnaHQ9JzEyJyBjb2xvcj0nJTIzMGIzYjI5JyUzRSUzQ3BhdGggc3Ryb2tlPSdjdXJyZW50Q29sb3InIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgZD0nbTMgOSA2LTZtMCA2TDMgMycvJTNFJTNDL3N2ZyUzRVwiKTtcbn1cblxuLmMtY2FsbG91dC0td2FybmluZzpub3QoLmMtY2FsbG91dC0tZGlhbG9nKSAuYy1jYWxsb3V0X19jbG9zZTpiZWZvcmV7XG4gIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiZGF0YTppbWFnZS9zdmcreG1sO2NoYXJzZXQ9dXRmLTgsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgd2lkdGg9JzEyJyBoZWlnaHQ9JzEyJyBjb2xvcj0nJTIzYWQ1OTE4JyUzRSUzQ3BhdGggc3Ryb2tlPSdjdXJyZW50Q29sb3InIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgZD0nbTMgOSA2LTZtMCA2TDMgMycvJTNFJTNDL3N2ZyUzRVwiKTtcbn1cblxuLmMtY2FsbG91dC0td2FybmluZzpub3QoLmMtY2FsbG91dC0tZGlhbG9nKSAuYy1jYWxsb3V0X19jbG9zZTphZnRlcntcbiAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCJkYXRhOmltYWdlL3N2Zyt4bWw7Y2hhcnNldD11dGYtOCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB3aWR0aD0nMTInIGhlaWdodD0nMTInIGNvbG9yPSclMjM3MDM4MTUnJTNFJTNDcGF0aCBzdHJva2U9J2N1cnJlbnRDb2xvcicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBkPSdtMyA5IDYtNm0wIDZMMyAzJy8lM0UlM0Mvc3ZnJTNFXCIpO1xufVxuXG4uYy1jYWxsb3V0LS1lcnJvcjpub3QoLmMtY2FsbG91dC0tZGlhbG9nKSAuYy1jYWxsb3V0X19jbG9zZS5pcy1mb2N1c2VkLC5jLWNhbGxvdXQtLWVycm9yOm5vdCguYy1jYWxsb3V0LS1kaWFsb2cpIC5jLWNhbGxvdXRfX2Nsb3NlOmZvY3Vze1xuICBiYWNrZ3JvdW5kLWNvbG9yOmNvbG9yLW1vZCgjY2MzMzQwIGFscGhhKDE1JSkpO1xufVxuXG4uYy1jYWxsb3V0LS1zdWNjZXNzOm5vdCguYy1jYWxsb3V0LS1kaWFsb2cpIC5jLWNhbGxvdXRfX2Nsb3NlLmlzLWZvY3VzZWQsLmMtY2FsbG91dC0tc3VjY2Vzczpub3QoLmMtY2FsbG91dC0tZGlhbG9nKSAuYy1jYWxsb3V0X19jbG9zZTpmb2N1c3tcbiAgYmFja2dyb3VuZC1jb2xvcjpjb2xvci1tb2QoIzAzODE1MyBhbHBoYSgxNSUpKTtcbn1cblxuLmMtY2FsbG91dC0td2FybmluZzpub3QoLmMtY2FsbG91dC0tZGlhbG9nKSAuYy1jYWxsb3V0X19jbG9zZS5pcy1mb2N1c2VkLC5jLWNhbGxvdXQtLXdhcm5pbmc6bm90KC5jLWNhbGxvdXQtLWRpYWxvZykgLmMtY2FsbG91dF9fY2xvc2U6Zm9jdXN7XG4gIGJhY2tncm91bmQtY29sb3I6Y29sb3ItbW9kKCNhZDU5MTggYWxwaGEoMTUlKSk7XG59XG5cbi5jLWNhbGxvdXQgLmMtY2FsbG91dF9fY2xvc2UuaXMtZm9jdXNlZDphY3RpdmUsLmMtY2FsbG91dCAuYy1jYWxsb3V0X19jbG9zZTpmb2N1czphY3RpdmV7XG4gIGJhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnQ7XG59XG5cbi5jLWNhbGxvdXQtLXJlY2Vzc2Vke1xuICBiYWNrZ3JvdW5kLWNvbG9yOiNmOGY5Zjk7XG59XG5cbi5jLWNhbGxvdXQtLWluZm97XG4gIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiZGF0YTppbWFnZS9zdmcreG1sO2NoYXJzZXQ9dXRmLTgsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgd2lkdGg9JzE2JyBoZWlnaHQ9JzE2JyBjb2xvcj0nJTIzNjg3MzdkJyUzRSUzQ2cgc3Ryb2tlPSdjdXJyZW50Q29sb3InJTNFJTNDY2lyY2xlIGN4PSc3LjUnIGN5PSc4LjUnIHI9JzcnIGZpbGw9J25vbmUnLyUzRSUzQ3BhdGggc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBkPSdNNy41IDEyLjVWOCcvJTNFJTNDL2clM0UlM0NjaXJjbGUgY3g9JzcuNScgY3k9JzUnIHI9JzEnIGZpbGw9J2N1cnJlbnRDb2xvcicvJTNFJTNDL3N2ZyUzRVwiKTtcbn1cblxuLmMtY2FsbG91dC0tZXJyb3J7XG4gIGJvcmRlci1jb2xvcjojZjViNWJhO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiNmZmYwZjE7XG4gIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiZGF0YTppbWFnZS9zdmcreG1sO2NoYXJzZXQ9dXRmLTgsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgd2lkdGg9JzE2JyBoZWlnaHQ9JzE2JyBjb2xvcj0nJTIzY2MzMzQwJyUzRSUzQ2cgZmlsbD0nbm9uZScgc3Ryb2tlPSdjdXJyZW50Q29sb3InJTNFJTNDY2lyY2xlIGN4PSc3LjUnIGN5PSc4LjUnIHI9JzcnLyUzRSUzQ3BhdGggc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBkPSdNNy41IDQuNVY5Jy8lM0UlM0MvZyUzRSUzQ2NpcmNsZSBjeD0nNy41JyBjeT0nMTInIHI9JzEnIGZpbGw9J2N1cnJlbnRDb2xvcicvJTNFJTNDL3N2ZyUzRVwiKTtcbiAgY29sb3I6IzhjMjMyYztcbn1cblxuLmMtY2FsbG91dC0tc3VjY2Vzc3tcbiAgYm9yZGVyLWNvbG9yOiNhZWNmYzI7XG4gIGJhY2tncm91bmQtY29sb3I6I2VkZjhmNDtcbiAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCJkYXRhOmltYWdlL3N2Zyt4bWw7Y2hhcnNldD11dGYtOCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB3aWR0aD0nMTYnIGhlaWdodD0nMTYnIGNvbG9yPSclMjMwMzgxNTMnJTNFJTNDZyBmaWxsPSdub25lJyBzdHJva2U9J2N1cnJlbnRDb2xvciclM0UlM0NwYXRoIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcgZD0nbTQgOSAyLjUgMi41IDUtNScvJTNFJTNDY2lyY2xlIGN4PSc3LjUnIGN5PSc4LjUnIHI9JzcnLyUzRSUzQy9nJTNFJTNDL3N2ZyUzRVwiKTtcbiAgY29sb3I6IzE4NjE0Njtcbn1cblxuLmMtY2FsbG91dC0td2FybmluZ3tcbiAgYm9yZGVyLWNvbG9yOiNmZWQ2YTg7XG4gIGJhY2tncm91bmQtY29sb3I6I2ZmZjdlZDtcbiAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCJkYXRhOmltYWdlL3N2Zyt4bWw7Y2hhcnNldD11dGYtOCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB3aWR0aD0nMTYnIGhlaWdodD0nMTYnIGNvbG9yPSclMjNhZDU5MTgnJTNFJTNDcGF0aCBmaWxsPSdub25lJyBzdHJva2U9J2N1cnJlbnRDb2xvcicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBkPSdNLjg4IDEzLjc3IDcuMDYgMS44NmMuMTktLjM2LjctLjM2Ljg5IDBsNi4xOCAxMS45MWMuMTcuMzMtLjA3LjczLS40NC43M0gxLjMyYy0uMzcgMC0uNjEtLjQtLjQ0LS43M3pNNy41IDZ2My41Jy8lM0UlM0NjaXJjbGUgY3g9JzcuNScgY3k9JzEyJyByPScxJyBmaWxsPSdjdXJyZW50Q29sb3InLyUzRSUzQy9zdmclM0VcIik7XG4gIGNvbG9yOiNhZDU5MTg7XG59XG5cbi5jLWNhbGxvdXQtLWVycm9yLC5jLWNhbGxvdXQtLWluZm8sLmMtY2FsbG91dC0tc3VjY2VzcywuYy1jYWxsb3V0LS13YXJuaW5ne1xuICBiYWNrZ3JvdW5kLXJlcGVhdDpuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtcG9zaXRpb246MjRweCAyMnB4O1xuICBwYWRkaW5nLWxlZnQ6NTBweDtcbn1cblxuLmMtY2FsbG91dC0tZGlhbG9ne1xuICBib3gtc2hhZG93OjAgMjBweCAyOHB4IDAgY29sb3ItbW9kKCMxNzQ5NGQgYWxwaGEoMTUlKSk7XG59XG5cbi5jLWNhbGxvdXQtLWRpYWxvZy5jLWNhbGxvdXQtLWVycm9yLC5jLWNhbGxvdXQtLWRpYWxvZy5jLWNhbGxvdXQtLXN1Y2Nlc3MsLmMtY2FsbG91dC0tZGlhbG9nLmMtY2FsbG91dC0td2FybmluZ3tcbiAgYm9yZGVyLWNvbG9yOiNkOGRjZGU7XG4gIGJhY2tncm91bmQtY29sb3I6I2ZmZjtcbiAgY29sb3I6IzQ5NTQ1Yztcbn1cblxuLmMtY2FsbG91dC0tZXJyb3IgLmMtY2FsbG91dF9fdGl0bGV7XG4gIGNvbG9yOiM2ODEyMTk7XG59XG5cbi5jLWNhbGxvdXQtLXN1Y2Nlc3MgLmMtY2FsbG91dF9fdGl0bGV7XG4gIGNvbG9yOiMwYjNiMjk7XG59XG5cbi5jLWNhbGxvdXQtLXdhcm5pbmcgLmMtY2FsbG91dF9fdGl0bGV7XG4gIGNvbG9yOiM3MDM4MTU7XG59XG5cbi5jLWNhbGxvdXQtLWRpYWxvZy5jLWNhbGxvdXQtLWVycm9yIC5jLWNhbGxvdXRfX3RpdGxle1xuICBjb2xvcjojY2MzMzQwO1xufVxuXG4uYy1jYWxsb3V0LS1kaWFsb2cuYy1jYWxsb3V0LS1zdWNjZXNzIC5jLWNhbGxvdXRfX3RpdGxle1xuICBjb2xvcjojMDM4MTUzO1xufVxuXG4uYy1jYWxsb3V0LS1kaWFsb2cuYy1jYWxsb3V0LS13YXJuaW5nIC5jLWNhbGxvdXRfX3RpdGxle1xuICBjb2xvcjojYWQ1OTE4O1xufVxuXG4uYy1jYWxsb3V0LS1lcnJvci5pcy1ydGwsLmMtY2FsbG91dC0taW5mby5pcy1ydGwsLmMtY2FsbG91dC0tc3VjY2Vzcy5pcy1ydGwsLmMtY2FsbG91dC0td2FybmluZy5pcy1ydGx7XG4gIGJhY2tncm91bmQtcG9zaXRpb246Y2FsYygxMDAlIC0gMjRweCkgMjJweDtcbiAgcGFkZGluZy1yaWdodDo1MHB4O1xuICBwYWRkaW5nLWxlZnQ6NDBweDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>/**
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+:root {
+  --zd-color-black: #000;
+  --zd-color-green-100: #edf8f4;
+  --zd-color-green-200: #d1e8df;
+  --zd-color-green-300: #aecfc2;
+  --zd-color-green-400: #5eae91;
+  --zd-color-green-500: #228f67;
+  --zd-color-green-600: #038153;
+  --zd-color-green-700: #186146;
+  --zd-color-green-800: #0b3b29;
+  --zd-color-grey-100: #f8f9f9;
+  --zd-color-grey-200: #e9ebed;
+  --zd-color-grey-300: #d8dcde;
+  --zd-color-grey-400: #c2c8cc;
+  --zd-color-grey-500: #87929d;
+  --zd-color-grey-600: #68737d;
+  --zd-color-grey-700: #49545c;
+  --zd-color-grey-800: #2f3941;
+  --zd-color-blue-100: #edf7ff;
+  --zd-color-blue-200: #cee2f2;
+  --zd-color-blue-300: #adcce4;
+  --zd-color-blue-400: #5293c7;
+  --zd-color-blue-500: #337fbd;
+  --zd-color-blue-600: #1f73b7;
+  --zd-color-blue-700: #144a75;
+  --zd-color-blue-800: #0f3554;
+  --zd-color-kale-100: #f5fcfc;
+  --zd-color-kale-200: #daeded;
+  --zd-color-kale-300: #bdd9d7;
+  --zd-color-kale-400: #90bbbb;
+  --zd-color-kale-500: #498283;
+  --zd-color-kale-600: #17494d;
+  --zd-color-kale-700: #03363d;
+  --zd-color-kale-800: #012b30;
+  --zd-color-red-100: #fff0f1;
+  --zd-color-red-200: #f5d5d8;
+  --zd-color-red-300: #f5b5ba;
+  --zd-color-red-400: #e35b66;
+  --zd-color-red-500: #d93f4c;
+  --zd-color-red-600: #cc3340;
+  --zd-color-red-700: #8c232c;
+  --zd-color-red-800: #681219;
+  --zd-color-yellow-100: #fff7ed;
+  --zd-color-yellow-200: #ffeedb;
+  --zd-color-yellow-300: #fed6a8;
+  --zd-color-yellow-400: #ffb057;
+  --zd-color-yellow-500: #f79a3e;
+  --zd-color-yellow-600: #ed8f1c;
+  --zd-color-yellow-700: #ad5918;
+  --zd-color-yellow-800: #703815;
+  --zd-color-white: #fff;
+  --zd-color-secondary-azure-400: #3091ec;
+  --zd-color-secondary-azure-600: #1371d6;
+  --zd-color-secondary-crimson-400: #e34f32;
+  --zd-color-secondary-crimson-600: #c72a1c;
+  --zd-color-secondary-fuschia-400: #d653c2;
+  --zd-color-secondary-fuschia-600: #a81897;
+  --zd-color-secondary-lemon-400: #ffd424;
+  --zd-color-secondary-lemon-600: #ffbb10;
+  --zd-color-secondary-lime-400: #43b324;
+  --zd-color-secondary-lime-600: #2e8200;
+  --zd-color-secondary-mint-400: #00a656;
+  --zd-color-secondary-mint-600: #058541;
+  --zd-color-secondary-orange-400: #de701d;
+  --zd-color-secondary-orange-600: #bf5000;
+  --zd-color-secondary-pink-400: #ec4d63;
+  --zd-color-secondary-pink-600: #d42054;
+  --zd-color-secondary-purple-400: #b552e2;
+  --zd-color-secondary-purple-600: #6a27b8;
+  --zd-color-secondary-royal-400: #5d7df5;
+  --zd-color-secondary-royal-600: #3353e2;
+  --zd-color-secondary-teal-400: #02a191;
+  --zd-color-secondary-teal-600: #028079;
+  --zd-color-secondary-azure-M400: #5f8dcf;
+  --zd-color-secondary-azure-M600: #3a70b2;
+  --zd-color-secondary-crimson-M400: #cc6c5b;
+  --zd-color-secondary-crimson-M600: #b24a3c;
+  --zd-color-secondary-fuschia-M400: #cf62a8;
+  --zd-color-secondary-fuschia-M600: #a8458c;
+  --zd-color-secondary-lemon-M400: #e7a500;
+  --zd-color-secondary-lemon-M600: #c38f00;
+  --zd-color-secondary-lime-M400: #519e2d;
+  --zd-color-secondary-lime-M600: #47782c;
+  --zd-color-secondary-mint-M400: #299c66;
+  --zd-color-secondary-mint-M600: #2e8057;
+  --zd-color-secondary-orange-M400: #d4772c;
+  --zd-color-secondary-orange-M600: #b35827;
+  --zd-color-secondary-pink-M400: #d57287;
+  --zd-color-secondary-pink-M600: #b23a5d;
+  --zd-color-secondary-purple-M400: #b072cc;
+  --zd-color-secondary-purple-M600: #9358b0;
+  --zd-color-secondary-royal-M400: #7986d8;
+  --zd-color-secondary-royal-M600: #4b61c3;
+  --zd-color-secondary-teal-M400: #2d9e8f;
+  --zd-color-secondary-teal-M600: #3c7873;
+  --zd-color-chat-orange: #f79a3e;
+  --zd-color-connect-red: #ff6224;
+  --zd-color-explore-blue: #30aabc;
+  --zd-color-gather-pink: #f6c8be;
+  --zd-color-guide-pink: #eb4962;
+  --zd-color-message-green: #37b8af;
+  --zd-color-sell-gold: #c38f00;
+  --zd-color-support-green: #00a656;
+  --zd-color-talk-yellow: #efc93d;
+  --zd-font-family-monospace: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --zd-font-family-system: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  --zd-font-size-xs: 10px;
+  --zd-font-size-sm: 12px;
+  --zd-font-size-md: 14px;
+  --zd-font-size-lg: 18px;
+  --zd-font-size-xl: 22px;
+  --zd-font-size-xxl: 26px;
+  --zd-font-size-xxxl: 36px;
+  --zd-font-size-sm-monospace: 11px;
+  --zd-font-size-md-monospace: 13px;
+  --zd-font-size-lg-monospace: 17px;
+  --zd-font-weight-thin: 100;
+  --zd-font-weight-extralight: 200;
+  --zd-font-weight-light: 300;
+  --zd-font-weight-regular: 400;
+  --zd-font-weight-medium: 500;
+  --zd-font-weight-semibold: 600;
+  --zd-font-weight-bold: 700;
+  --zd-font-weight-extrabold: 800;
+  --zd-font-weight-black: 900;
+  --zd-font-weight-ultralight: 200;
+  --zd-font-weight-ultrabold: 800;
+  --zd-font-weight-heavy: 900;
+  --zd-line-height-sm: 16px;
+  --zd-line-height-md: 20px;
+  --zd-line-height-lg: 24px;
+  --zd-line-height-xl: 28px;
+  --zd-line-height-xxl: 32px;
+  --zd-line-height-xxxl: 44px;
+  --zd-spacing-xxs: 4px;
+  --zd-spacing-xs: 8px;
+  --zd-spacing-sm: 12px;
+  --zd-spacing: 20px;
+  --zd-spacing-lg: 32px;
+  --zd-spacing-xl: 40px;
+  --zd-spacing-xxl: 48px;
+}
+
+.f9BqAlsIZvx7sACM4xRFqwHmcyIhbjt6 {
+}
+
+.kzYITkxJWL_02DpPXe0gWyN2swJRVitJ {
+}
+
+.wINJoVYRvGy8raLsj56fUQ_Rtxf8SXNp {
+}
+
+.QNIPdWgxsnPIjnQQzFMoMgcPDAOOsPrm {
+}
+
+._HdHwJNOTFG9Mij4WmL1AlvKwno7GrCd {
+  background-color: #f8f9f9;
+}
+
+.yXw8lmZs7Tg0Y73sa9aaAZs1ahSKzGnp {
+  background-color: transparent !important;
+  padding: 0;
+}
+
+.yXw8lmZs7Tg0Y73sa9aaAZs1ahSKzGnp.h4cMXsHyKKZf7DHHkpaaFwuvtZd3B4HJ {
+  outline: 1px solid #2f3941;
+  outline: 1px solid var(--zd-color-grey-800);
+}
+
+.yXw8lmZs7Tg0Y73sa9aaAZs1ahSKzGnp:focus-visible {
+  outline: 1px solid #2f3941;
+  outline: 1px solid var(--zd-color-grey-800);
+}
+
+.QN1ves1hk0MUeUx70asdhg7VPFdkXeNa {
+}
+
+.XJXUPzr7Dx0szbQn8wH5AZY581GZ1SmI {
+}
+
+.sPA0enxuGX2pj2jkRfN0ZArNVD80pacY {
+}
+
+/* Reset styles for links within notifications */
+
+.qQF1ABBg7opWaOeLFI1g1Ax8igXoLRdR a {
+  -webkit-animation: none 0s ease 0s 1 normal none running;
+          animation: none 0s ease 0s 1 normal none running;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+  border: medium none currentColor;
+  border-collapse: separate;
+  -o-border-image: none;
+     border-image: none;
+  border-radius: 0;
+  border-spacing: 0;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  caption-side: top;
+  clear: none;
+  clip: auto;
+  color: #000;
+  -webkit-columns: auto;
+     -moz-columns: auto;
+          columns: auto;
+  -webkit-column-count: auto;
+     -moz-column-count: auto;
+          column-count: auto;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  grid-column-gap: normal;
+  -webkit-column-gap: normal;
+     -moz-column-gap: normal;
+          column-gap: normal;
+  -webkit-column-rule: medium none currentColor;
+     -moz-column-rule: medium none currentColor;
+          column-rule: medium none currentColor;
+  -webkit-column-span: 1;
+     -moz-column-span: 1;
+          column-span: 1;
+  -webkit-column-width: auto;
+     -moz-column-width: auto;
+          column-width: auto;
+  content: normal;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: ltr;
+  display: inline;
+  empty-cells: show;
+  float: none;
+  font-family: serif;
+  font-size: medium;
+  font-style: normal;
+  -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: normal;
+  height: auto;
+  -webkit-hyphens: none;
+          hyphens: none;
+  left: auto;
+  letter-spacing: normal;
+  list-style: disc outside none;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  orphans: 2;
+  outline: medium none invert;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0;
+  page-break-after: auto;
+  page-break-before: auto;
+  page-break-inside: auto;
+  -webkit-perspective: none;
+          perspective: none;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+  position: static;
+  right: auto;
+  -moz-tab-size: 8;
+    -o-tab-size: 8;
+       tab-size: 8;
+  table-layout: auto;
+  text-align: left;
+  -moz-text-align-last: auto;
+       text-align-last: auto;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-transform-style: flat;
+          transform-style: flat;
+  transition: none 0s ease 0s;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  widows: 2;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  all: initial;
+  font-size: inherit;
+  font-family: inherit;
+  color: #0072ef;
+  cursor: pointer;
+}
+
+.qQF1ABBg7opWaOeLFI1g1Ax8igXoLRdR a:hover,
+.qQF1ABBg7opWaOeLFI1g1Ax8igXoLRdR a:focus {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9AemVuZGVza2dhcmRlbi9jc3MtdmFyaWFibGVzL2Rpc3QvaW5kZXguY3NzIiwid2VicGFjazovLy4vdWkvY29tcG9uZW50cy9Ob3RpZmljYXRpb24vaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7OztFQUtFOztBQUVGO0VBQ0Usc0JBQXNCO0VBQ3RCLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsNkJBQTZCO0VBQzdCLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsNkJBQTZCO0VBQzdCLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsNEJBQTRCO0VBQzVCLDRCQUE0QjtFQUM1Qiw0QkFBNEI7RUFDNUIsMkJBQTJCO0VBQzNCLDJCQUEyQjtFQUMzQiwyQkFBMkI7RUFDM0IsMkJBQTJCO0VBQzNCLDJCQUEyQjtFQUMzQiwyQkFBMkI7RUFDM0IsMkJBQTJCO0VBQzNCLDJCQUEyQjtFQUMzQiw4QkFBOEI7RUFDOUIsOEJBQThCO0VBQzlCLDhCQUE4QjtFQUM5Qiw4QkFBOEI7RUFDOUIsOEJBQThCO0VBQzlCLDhCQUE4QjtFQUM5Qiw4QkFBOEI7RUFDOUIsOEJBQThCO0VBQzlCLHNCQUFzQjtFQUN0Qix1Q0FBdUM7RUFDdkMsdUNBQXVDO0VBQ3ZDLHlDQUF5QztFQUN6Qyx5Q0FBeUM7RUFDekMseUNBQXlDO0VBQ3pDLHlDQUF5QztFQUN6Qyx1Q0FBdUM7RUFDdkMsdUNBQXVDO0VBQ3ZDLHNDQUFzQztFQUN0QyxzQ0FBc0M7RUFDdEMsc0NBQXNDO0VBQ3RDLHNDQUFzQztFQUN0Qyx3Q0FBd0M7RUFDeEMsd0NBQXdDO0VBQ3hDLHNDQUFzQztFQUN0QyxzQ0FBc0M7RUFDdEMsd0NBQXdDO0VBQ3hDLHdDQUF3QztFQUN4Qyx1Q0FBdUM7RUFDdkMsdUNBQXVDO0VBQ3ZDLHNDQUFzQztFQUN0QyxzQ0FBc0M7RUFDdEMsd0NBQXdDO0VBQ3hDLHdDQUF3QztFQUN4QywwQ0FBMEM7RUFDMUMsMENBQTBDO0VBQzFDLDBDQUEwQztFQUMxQywwQ0FBMEM7RUFDMUMsd0NBQXdDO0VBQ3hDLHdDQUF3QztFQUN4Qyx1Q0FBdUM7RUFDdkMsdUNBQXVDO0VBQ3ZDLHVDQUF1QztFQUN2Qyx1Q0FBdUM7RUFDdkMseUNBQXlDO0VBQ3pDLHlDQUF5QztFQUN6Qyx1Q0FBdUM7RUFDdkMsdUNBQXVDO0VBQ3ZDLHlDQUF5QztFQUN6Qyx5Q0FBeUM7RUFDekMsd0NBQXdDO0VBQ3hDLHdDQUF3QztFQUN4Qyx1Q0FBdUM7RUFDdkMsdUNBQXVDO0VBQ3ZDLCtCQUErQjtFQUMvQiwrQkFBK0I7RUFDL0IsZ0NBQWdDO0VBQ2hDLCtCQUErQjtFQUMvQiw4QkFBOEI7RUFDOUIsaUNBQWlDO0VBQ2pDLDZCQUE2QjtFQUM3QixpQ0FBaUM7RUFDakMsK0JBQStCO0VBQy9CLGtHQUFrRztFQUNsRywwTkFBOEo7RUFDOUosdUJBQXVCO0VBQ3ZCLHVCQUF1QjtFQUN2Qix1QkFBdUI7RUFDdkIsdUJBQXVCO0VBQ3ZCLHVCQUF1QjtFQUN2Qix3QkFBd0I7RUFDeEIseUJBQXlCO0VBQ3pCLGlDQUFpQztFQUNqQyxpQ0FBaUM7RUFDakMsaUNBQWlDO0VBQ2pDLDBCQUEwQjtFQUMxQixnQ0FBZ0M7RUFDaEMsMkJBQTJCO0VBQzNCLDZCQUE2QjtFQUM3Qiw0QkFBNEI7RUFDNUIsOEJBQThCO0VBQzlCLDBCQUEwQjtFQUMxQiwrQkFBK0I7RUFDL0IsMkJBQTJCO0VBQzNCLGdDQUFnQztFQUNoQywrQkFBK0I7RUFDL0IsMkJBQTJCO0VBQzNCLHlCQUF5QjtFQUN6Qix5QkFBeUI7RUFDekIseUJBQXlCO0VBQ3pCLHlCQUF5QjtFQUN6QiwwQkFBMEI7RUFDMUIsMkJBQTJCO0VBQzNCLHFCQUFxQjtFQUNyQixvQkFBb0I7RUFDcEIscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixxQkFBcUI7RUFDckIscUJBQXFCO0VBQ3JCLHNCQUFzQjtBQUN4Qjs7QUNsSkE7QUFFQTs7QUFFQTtBQUVBOztBQUVBO0FBRUE7O0FBRUE7QUFFQTs7QUFFQTtFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLHdDQUF3QztFQUV4QyxVQUFVO0FBQ1o7O0FBRUE7RUFDRSwwQkFBMkM7RUFBM0MsMkNBQTJDO0FBQzdDOztBQUZBO0VBQ0UsMEJBQTJDO0VBQTNDLDJDQUEyQztBQUM3Qzs7QUFFQTtBQUVBOztBQUVBO0FBRUE7O0FBRUE7QUFFQTs7QUFFQSxnREFBZ0Q7O0FBQ2hEO0VBQ0Usd0RBQVk7VUFBWixnREFBWTtFQUFaLG9DQUFZO1VBQVosNEJBQVk7RUFBWixpRkFBWTtFQUFaLGdDQUFZO0VBQVoseUJBQVk7RUFBWixxQkFBWTtLQUFaLGtCQUFZO0VBQVosZ0JBQVk7RUFBWixpQkFBWTtFQUFaLFlBQVk7RUFBWixnQkFBWTtFQUFaLHVCQUFZO0VBQVosaUJBQVk7RUFBWixXQUFZO0VBQVosVUFBWTtFQUFaLFdBQVk7RUFBWixxQkFBWTtLQUFaLGtCQUFZO1VBQVosYUFBWTtFQUFaLDBCQUFZO0tBQVosdUJBQVk7VUFBWixrQkFBWTtFQUFaLDRCQUFZO0tBQVoseUJBQVk7VUFBWixvQkFBWTtFQUFaLHVCQUFZO0VBQVosMEJBQVk7S0FBWix1QkFBWTtVQUFaLGtCQUFZO0VBQVosNkNBQVk7S0FBWiwwQ0FBWTtVQUFaLHFDQUFZO0VBQVosc0JBQVk7S0FBWixtQkFBWTtVQUFaLGNBQVk7RUFBWiwwQkFBWTtLQUFaLHVCQUFZO1VBQVosa0JBQVk7RUFBWixlQUFZO0VBQVosdUJBQVk7RUFBWixtQkFBWTtFQUFaLFlBQVk7RUFBWixjQUFZO0VBQVosZUFBWTtFQUFaLGlCQUFZO0VBQVosV0FBWTtFQUFaLGtCQUFZO0VBQVosaUJBQVk7RUFBWixrQkFBWTtFQUFaLHFDQUFZO1VBQVosNkJBQVk7RUFBWixvQkFBWTtFQUFaLG1CQUFZO0VBQVosb0JBQVk7RUFBWixtQkFBWTtFQUFaLFlBQVk7RUFBWixxQkFBWTtVQUFaLGFBQVk7RUFBWixVQUFZO0VBQVosc0JBQVk7RUFBWiw2QkFBWTtFQUFaLFNBQVk7RUFBWixnQkFBWTtFQUFaLGVBQVk7RUFBWixhQUFZO0VBQVosWUFBWTtFQUFaLFVBQVk7RUFBWixVQUFZO0VBQVosMkJBQVk7RUFBWixpQkFBWTtFQUFaLG1CQUFZO0VBQVosbUJBQVk7RUFBWixVQUFZO0VBQVosc0JBQVk7RUFBWix1QkFBWTtFQUFaLHVCQUFZO0VBQVoseUJBQVk7VUFBWixpQkFBWTtFQUFaLG1DQUFZO1VBQVosMkJBQVk7RUFBWixnQkFBWTtFQUFaLFdBQVk7RUFBWixnQkFBWTtJQUFaLGNBQVk7T0FBWixXQUFZO0VBQVosa0JBQVk7RUFBWixnQkFBWTtFQUFaLDBCQUFZO09BQVoscUJBQVk7RUFBWixxQkFBWTtFQUFaLGNBQVk7RUFBWixpQkFBWTtFQUFaLG9CQUFZO0VBQVosU0FBWTtFQUFaLHVCQUFZO1VBQVosZUFBWTtFQUFaLG1DQUFZO1VBQVosMkJBQVk7RUFBWiw2QkFBWTtVQUFaLHFCQUFZO0VBQVosMkJBQVk7RUFBWixvQkFBWTtFQUFaLHdCQUFZO0VBQVosbUJBQVk7RUFBWixtQkFBWTtFQUFaLFNBQVk7RUFBWixXQUFZO0VBQVosb0JBQVk7RUFBWixhQUFZO0VBQVosWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsY0FBYztFQUNkLGVBQWU7QUFDakI7O0FBQ0E7O0VBRUUsMEJBQTBCO0FBQzVCIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBDb3B5cmlnaHQgWmVuZGVzaywgSW5jLlxuICpcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjBcbiAqIGZvdW5kIGF0IGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMC5cbiAqL1xuXG46cm9vdCB7XG4gIC0temQtY29sb3ItYmxhY2s6ICMwMDA7XG4gIC0temQtY29sb3ItZ3JlZW4tMTAwOiAjZWRmOGY0O1xuICAtLXpkLWNvbG9yLWdyZWVuLTIwMDogI2QxZThkZjtcbiAgLS16ZC1jb2xvci1ncmVlbi0zMDA6ICNhZWNmYzI7XG4gIC0temQtY29sb3ItZ3JlZW4tNDAwOiAjNWVhZTkxO1xuICAtLXpkLWNvbG9yLWdyZWVuLTUwMDogIzIyOGY2NztcbiAgLS16ZC1jb2xvci1ncmVlbi02MDA6ICMwMzgxNTM7XG4gIC0temQtY29sb3ItZ3JlZW4tNzAwOiAjMTg2MTQ2O1xuICAtLXpkLWNvbG9yLWdyZWVuLTgwMDogIzBiM2IyOTtcbiAgLS16ZC1jb2xvci1ncmV5LTEwMDogI2Y4ZjlmOTtcbiAgLS16ZC1jb2xvci1ncmV5LTIwMDogI2U5ZWJlZDtcbiAgLS16ZC1jb2xvci1ncmV5LTMwMDogI2Q4ZGNkZTtcbiAgLS16ZC1jb2xvci1ncmV5LTQwMDogI2MyYzhjYztcbiAgLS16ZC1jb2xvci1ncmV5LTUwMDogIzg3OTI5ZDtcbiAgLS16ZC1jb2xvci1ncmV5LTYwMDogIzY4NzM3ZDtcbiAgLS16ZC1jb2xvci1ncmV5LTcwMDogIzQ5NTQ1YztcbiAgLS16ZC1jb2xvci1ncmV5LTgwMDogIzJmMzk0MTtcbiAgLS16ZC1jb2xvci1ibHVlLTEwMDogI2VkZjdmZjtcbiAgLS16ZC1jb2xvci1ibHVlLTIwMDogI2NlZTJmMjtcbiAgLS16ZC1jb2xvci1ibHVlLTMwMDogI2FkY2NlNDtcbiAgLS16ZC1jb2xvci1ibHVlLTQwMDogIzUyOTNjNztcbiAgLS16ZC1jb2xvci1ibHVlLTUwMDogIzMzN2ZiZDtcbiAgLS16ZC1jb2xvci1ibHVlLTYwMDogIzFmNzNiNztcbiAgLS16ZC1jb2xvci1ibHVlLTcwMDogIzE0NGE3NTtcbiAgLS16ZC1jb2xvci1ibHVlLTgwMDogIzBmMzU1NDtcbiAgLS16ZC1jb2xvci1rYWxlLTEwMDogI2Y1ZmNmYztcbiAgLS16ZC1jb2xvci1rYWxlLTIwMDogI2RhZWRlZDtcbiAgLS16ZC1jb2xvci1rYWxlLTMwMDogI2JkZDlkNztcbiAgLS16ZC1jb2xvci1rYWxlLTQwMDogIzkwYmJiYjtcbiAgLS16ZC1jb2xvci1rYWxlLTUwMDogIzQ5ODI4MztcbiAgLS16ZC1jb2xvci1rYWxlLTYwMDogIzE3NDk0ZDtcbiAgLS16ZC1jb2xvci1rYWxlLTcwMDogIzAzMzYzZDtcbiAgLS16ZC1jb2xvci1rYWxlLTgwMDogIzAxMmIzMDtcbiAgLS16ZC1jb2xvci1yZWQtMTAwOiAjZmZmMGYxO1xuICAtLXpkLWNvbG9yLXJlZC0yMDA6ICNmNWQ1ZDg7XG4gIC0temQtY29sb3ItcmVkLTMwMDogI2Y1YjViYTtcbiAgLS16ZC1jb2xvci1yZWQtNDAwOiAjZTM1YjY2O1xuICAtLXpkLWNvbG9yLXJlZC01MDA6ICNkOTNmNGM7XG4gIC0temQtY29sb3ItcmVkLTYwMDogI2NjMzM0MDtcbiAgLS16ZC1jb2xvci1yZWQtNzAwOiAjOGMyMzJjO1xuICAtLXpkLWNvbG9yLXJlZC04MDA6ICM2ODEyMTk7XG4gIC0temQtY29sb3IteWVsbG93LTEwMDogI2ZmZjdlZDtcbiAgLS16ZC1jb2xvci15ZWxsb3ctMjAwOiAjZmZlZWRiO1xuICAtLXpkLWNvbG9yLXllbGxvdy0zMDA6ICNmZWQ2YTg7XG4gIC0temQtY29sb3IteWVsbG93LTQwMDogI2ZmYjA1NztcbiAgLS16ZC1jb2xvci15ZWxsb3ctNTAwOiAjZjc5YTNlO1xuICAtLXpkLWNvbG9yLXllbGxvdy02MDA6ICNlZDhmMWM7XG4gIC0temQtY29sb3IteWVsbG93LTcwMDogI2FkNTkxODtcbiAgLS16ZC1jb2xvci15ZWxsb3ctODAwOiAjNzAzODE1O1xuICAtLXpkLWNvbG9yLXdoaXRlOiAjZmZmO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1henVyZS00MDA6ICMzMDkxZWM7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LWF6dXJlLTYwMDogIzEzNzFkNjtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktY3JpbXNvbi00MDA6ICNlMzRmMzI7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LWNyaW1zb24tNjAwOiAjYzcyYTFjO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1mdXNjaGlhLTQwMDogI2Q2NTNjMjtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktZnVzY2hpYS02MDA6ICNhODE4OTc7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LWxlbW9uLTQwMDogI2ZmZDQyNDtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktbGVtb24tNjAwOiAjZmZiYjEwO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1saW1lLTQwMDogIzQzYjMyNDtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktbGltZS02MDA6ICMyZTgyMDA7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LW1pbnQtNDAwOiAjMDBhNjU2O1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1taW50LTYwMDogIzA1ODU0MTtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktb3JhbmdlLTQwMDogI2RlNzAxZDtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktb3JhbmdlLTYwMDogI2JmNTAwMDtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktcGluay00MDA6ICNlYzRkNjM7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LXBpbmstNjAwOiAjZDQyMDU0O1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1wdXJwbGUtNDAwOiAjYjU1MmUyO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1wdXJwbGUtNjAwOiAjNmEyN2I4O1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1yb3lhbC00MDA6ICM1ZDdkZjU7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LXJveWFsLTYwMDogIzMzNTNlMjtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktdGVhbC00MDA6ICMwMmExOTE7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LXRlYWwtNjAwOiAjMDI4MDc5O1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1henVyZS1NNDAwOiAjNWY4ZGNmO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1henVyZS1NNjAwOiAjM2E3MGIyO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1jcmltc29uLU00MDA6ICNjYzZjNWI7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LWNyaW1zb24tTTYwMDogI2IyNGEzYztcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktZnVzY2hpYS1NNDAwOiAjY2Y2MmE4O1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1mdXNjaGlhLU02MDA6ICNhODQ1OGM7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LWxlbW9uLU00MDA6ICNlN2E1MDA7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LWxlbW9uLU02MDA6ICNjMzhmMDA7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LWxpbWUtTTQwMDogIzUxOWUyZDtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktbGltZS1NNjAwOiAjNDc3ODJjO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1taW50LU00MDA6ICMyOTljNjY7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LW1pbnQtTTYwMDogIzJlODA1NztcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktb3JhbmdlLU00MDA6ICNkNDc3MmM7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LW9yYW5nZS1NNjAwOiAjYjM1ODI3O1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1waW5rLU00MDA6ICNkNTcyODc7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LXBpbmstTTYwMDogI2IyM2E1ZDtcbiAgLS16ZC1jb2xvci1zZWNvbmRhcnktcHVycGxlLU00MDA6ICNiMDcyY2M7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LXB1cnBsZS1NNjAwOiAjOTM1OGIwO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1yb3lhbC1NNDAwOiAjNzk4NmQ4O1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS1yb3lhbC1NNjAwOiAjNGI2MWMzO1xuICAtLXpkLWNvbG9yLXNlY29uZGFyeS10ZWFsLU00MDA6ICMyZDllOGY7XG4gIC0temQtY29sb3Itc2Vjb25kYXJ5LXRlYWwtTTYwMDogIzNjNzg3MztcbiAgLS16ZC1jb2xvci1jaGF0LW9yYW5nZTogI2Y3OWEzZTtcbiAgLS16ZC1jb2xvci1jb25uZWN0LXJlZDogI2ZmNjIyNDtcbiAgLS16ZC1jb2xvci1leHBsb3JlLWJsdWU6ICMzMGFhYmM7XG4gIC0temQtY29sb3ItZ2F0aGVyLXBpbms6ICNmNmM4YmU7XG4gIC0temQtY29sb3ItZ3VpZGUtcGluazogI2ViNDk2MjtcbiAgLS16ZC1jb2xvci1tZXNzYWdlLWdyZWVuOiAjMzdiOGFmO1xuICAtLXpkLWNvbG9yLXNlbGwtZ29sZDogI2MzOGYwMDtcbiAgLS16ZC1jb2xvci1zdXBwb3J0LWdyZWVuOiAjMDBhNjU2O1xuICAtLXpkLWNvbG9yLXRhbGsteWVsbG93OiAjZWZjOTNkO1xuICAtLXpkLWZvbnQtZmFtaWx5LW1vbm9zcGFjZTogU0ZNb25vLVJlZ3VsYXIsIENvbnNvbGFzLCAnTGliZXJhdGlvbiBNb25vJywgTWVubG8sIENvdXJpZXIsIG1vbm9zcGFjZTtcbiAgLS16ZC1mb250LWZhbWlseS1zeXN0ZW06IHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIE94eWdlbi1TYW5zLCBVYnVudHUsIENhbnRhcmVsbCwgJ0hlbHZldGljYSBOZXVlJywgQXJpYWwsIHNhbnMtc2VyaWY7XG4gIC0temQtZm9udC1zaXplLXhzOiAxMHB4O1xuICAtLXpkLWZvbnQtc2l6ZS1zbTogMTJweDtcbiAgLS16ZC1mb250LXNpemUtbWQ6IDE0cHg7XG4gIC0temQtZm9udC1zaXplLWxnOiAxOHB4O1xuICAtLXpkLWZvbnQtc2l6ZS14bDogMjJweDtcbiAgLS16ZC1mb250LXNpemUteHhsOiAyNnB4O1xuICAtLXpkLWZvbnQtc2l6ZS14eHhsOiAzNnB4O1xuICAtLXpkLWZvbnQtc2l6ZS1zbS1tb25vc3BhY2U6IDExcHg7XG4gIC0temQtZm9udC1zaXplLW1kLW1vbm9zcGFjZTogMTNweDtcbiAgLS16ZC1mb250LXNpemUtbGctbW9ub3NwYWNlOiAxN3B4O1xuICAtLXpkLWZvbnQtd2VpZ2h0LXRoaW46IDEwMDtcbiAgLS16ZC1mb250LXdlaWdodC1leHRyYWxpZ2h0OiAyMDA7XG4gIC0temQtZm9udC13ZWlnaHQtbGlnaHQ6IDMwMDtcbiAgLS16ZC1mb250LXdlaWdodC1yZWd1bGFyOiA0MDA7XG4gIC0temQtZm9udC13ZWlnaHQtbWVkaXVtOiA1MDA7XG4gIC0temQtZm9udC13ZWlnaHQtc2VtaWJvbGQ6IDYwMDtcbiAgLS16ZC1mb250LXdlaWdodC1ib2xkOiA3MDA7XG4gIC0temQtZm9udC13ZWlnaHQtZXh0cmFib2xkOiA4MDA7XG4gIC0temQtZm9udC13ZWlnaHQtYmxhY2s6IDkwMDtcbiAgLS16ZC1mb250LXdlaWdodC11bHRyYWxpZ2h0OiAyMDA7XG4gIC0temQtZm9udC13ZWlnaHQtdWx0cmFib2xkOiA4MDA7XG4gIC0temQtZm9udC13ZWlnaHQtaGVhdnk6IDkwMDtcbiAgLS16ZC1saW5lLWhlaWdodC1zbTogMTZweDtcbiAgLS16ZC1saW5lLWhlaWdodC1tZDogMjBweDtcbiAgLS16ZC1saW5lLWhlaWdodC1sZzogMjRweDtcbiAgLS16ZC1saW5lLWhlaWdodC14bDogMjhweDtcbiAgLS16ZC1saW5lLWhlaWdodC14eGw6IDMycHg7XG4gIC0temQtbGluZS1oZWlnaHQteHh4bDogNDRweDtcbiAgLS16ZC1zcGFjaW5nLXh4czogNHB4O1xuICAtLXpkLXNwYWNpbmcteHM6IDhweDtcbiAgLS16ZC1zcGFjaW5nLXNtOiAxMnB4O1xuICAtLXpkLXNwYWNpbmc6IDIwcHg7XG4gIC0temQtc3BhY2luZy1sZzogMzJweDtcbiAgLS16ZC1zcGFjaW5nLXhsOiA0MHB4O1xuICAtLXpkLXNwYWNpbmcteHhsOiA0OHB4O1xufVxuIiwiQGltcG9ydCBcIkB6ZW5kZXNrZ2FyZGVuL2Nzcy12YXJpYWJsZXNcIjtcblxuLmRlZmF1bHQge1xuICBjb21wb3NlczogYy1jYWxsb3V0IGZyb20gXCJ+QHplbmRlc2tnYXJkZW4vY3NzLWNhbGxvdXRzL2Rpc3QvaW5kZXguY3NzXCI7XG59XG5cbi5zdWNjZXNzIHtcbiAgY29tcG9zZXM6IGMtY2FsbG91dCBjLWNhbGxvdXQtLXN1Y2Nlc3MgZnJvbSBcIn5AemVuZGVza2dhcmRlbi9jc3MtY2FsbG91dHMvZGlzdC9pbmRleC5jc3NcIjtcbn1cblxuLndhcm5pbmcge1xuICBjb21wb3NlczogYy1jYWxsb3V0IGMtY2FsbG91dC0td2FybmluZyBmcm9tIFwifkB6ZW5kZXNrZ2FyZGVuL2Nzcy1jYWxsb3V0cy9kaXN0L2luZGV4LmNzc1wiO1xufVxuXG4uZXJyb3Ige1xuICBjb21wb3NlczogYy1jYWxsb3V0IGMtY2FsbG91dC0tZXJyb3IgZnJvbSBcIn5AemVuZGVza2dhcmRlbi9jc3MtY2FsbG91dHMvZGlzdC9pbmRleC5jc3NcIjtcbn1cblxuLmluZm8ge1xuICBjb21wb3NlczogYy1jYWxsb3V0IGMtY2FsbG91dC0taW5mbyBmcm9tIFwifkB6ZW5kZXNrZ2FyZGVuL2Nzcy1jYWxsb3V0cy9kaXN0L2luZGV4LmNzc1wiO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjhmOWY5O1xufVxuXG4ucmVtb3ZlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQgIWltcG9ydGFudDtcbiAgY29tcG9zZXM6IGMtY2FsbG91dF9fY2xvc2UgZnJvbSBcIn5AemVuZGVza2dhcmRlbi9jc3MtY2FsbG91dHMvZGlzdC9pbmRleC5jc3NcIjtcbiAgcGFkZGluZzogMDtcbn1cblxuLnJlbW92ZTpmb2N1cy12aXNpYmxlIHtcbiAgb3V0bGluZTogMXB4IHNvbGlkIHZhcigtLXpkLWNvbG9yLWdyZXktODAwKTtcbn1cblxuLnRpdGxlIHtcbiAgY29tcG9zZXM6IGMtY2FsbG91dF9fdGl0bGUgZnJvbSBcIn5AemVuZGVza2dhcmRlbi9jc3MtY2FsbG91dHMvZGlzdC9pbmRleC5jc3NcIjtcbn1cblxuLnJ0bCB7XG4gIGNvbXBvc2VzOiBpcy1ydGwgZnJvbSBcIn5AemVuZGVza2dhcmRlbi9jc3MtY2FsbG91dHMvZGlzdC9pbmRleC5jc3NcIjtcbn1cblxuLmZsb2F0aW5nIHtcbiAgY29tcG9zZXM6IGMtY2FsbG91dC0tZGlhbG9nIGZyb20gXCJ+QHplbmRlc2tnYXJkZW4vY3NzLWNhbGxvdXRzL2Rpc3QvaW5kZXguY3NzXCI7XG59XG5cbi8qIFJlc2V0IHN0eWxlcyBmb3IgbGlua3Mgd2l0aGluIG5vdGlmaWNhdGlvbnMgKi9cbi5ub3RpZmljYXRpb24gYSB7XG4gIGFsbDogaW5pdGlhbDtcbiAgZm9udC1zaXplOiBpbmhlcml0O1xuICBmb250LWZhbWlseTogaW5oZXJpdDtcbiAgY29sb3I6ICMwMDcyZWY7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5ub3RpZmljYXRpb24gYTpob3Zlcixcbi5ub3RpZmljYXRpb24gYTpmb2N1cyB7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.gG1SKx_8sRWXWUqBql1Ygd7tnyV_z43E {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 360px;
+  z-index: 2147483647; /* needs to be higher than the z-index of the navbar and modal backdrop */
+}
+
+[dir="rtl"] .gG1SKx_8sRWXWUqBql1Ygd7tnyV_z43E {
+  right: 0;
+  left: 16px;
+}
+
+.gG1SKx_8sRWXWUqBql1Ygd7tnyV_z43E > * {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3VpL2NvbXBvbmVudHMvTm90aWZpY2F0aW9ucy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBZTtFQUNmLFNBQVM7RUFDVCxXQUFXO0VBQ1gsWUFBWTtFQUNaLG1CQUFtQixFQUFFLHlFQUF5RTtBQUNoRzs7QUFFQTtFQUNFLFFBQVE7RUFDUixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckIiLCJzb3VyY2VzQ29udGVudCI6WyIubm90aWZpY2F0aW9ucyB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAxNnB4O1xuICByaWdodDogMTZweDtcbiAgd2lkdGg6IDM2MHB4O1xuICB6LWluZGV4OiAyMTQ3NDgzNjQ3OyAvKiBuZWVkcyB0byBiZSBoaWdoZXIgdGhhbiB0aGUgei1pbmRleCBvZiB0aGUgbmF2YmFyIGFuZCBtb2RhbCBiYWNrZHJvcCAqL1xufVxuXG5bZGlyPVwicnRsXCJdIC5ub3RpZmljYXRpb25zIHtcbiAgcmlnaHQ6IDA7XG4gIGxlZnQ6IDE2cHg7XG59XG5cbi5ub3RpZmljYXRpb25zID4gKiB7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.NjHrlmSUIMtSlY7gtg7w7dtpuhz62MEa {
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3VpL2phdmFzY3JpcHRzL2VuZHVzZXIvbW9kdWxlcy9zZXR1cE5vdGlmaWNhdGlvbnMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBRUEiLCJzb3VyY2VzQ29udGVudCI6WyIubm90aWZpY2F0aW9uQm9keSB7XG4gIGNvbXBvc2VzOiBjLWNhbGxvdXRfX3BhcmFncmFwaCBmcm9tIFwifkB6ZW5kZXNrZ2FyZGVuL2Nzcy1jYWxsb3V0cy9kaXN0L2luZGV4LmNzc1wiO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>:root {
+  --reach-menu-button: 1;
+}
+
+._8RHFYPTt0CxuUudzL8wxA9oZq1ynL1u {
+  background: #fff;
+  border: 1px solid #D8D8D8;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  left: 0;
+  min-width: 170px;
+  outline: none;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+._s7IdTkp038IFCdlKs8vwOcioOy4uK5h {
+  color: #333;
+  cursor: pointer;
+  display: block;
+  padding: 7px 40px 7px 20px;
+  outline: none;
+  white-space: nowrap;
+}
+
+[data-reach-menu-item][data-selected] {
+  background: #F0F0F0;
+}
+
+.XmCiWBUhr_QflETEQRaOWgLkfbAj8oS7 {
+  border-bottom: 1px solid #D8D8D8;
+  color: #969696;
+  display: block;
+  font-weight: normal;
+  font-size: 11px;
+  padding: 5px 0;
+  margin: 5px 20px 10px 20px;
+}
+
+.NFPgFc0gI0HvonfLdOrjAWlpe6fhsgu2 {
+  display: inline-block;
+  width: 10px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3VpL2NvbXBvbmVudHMvTWVudUJ1dHRvbi9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQix3Q0FBd0M7RUFDeEMsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsT0FBTztFQUNQLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2IsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsZUFBZTtFQUNmLGNBQWM7RUFDZCwwQkFBMEI7RUFDMUIsYUFBYTtFQUNiLG1CQUFtQjtBQUNyQjs7QUFHQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGdDQUFnQztFQUNoQyxjQUFjO0VBQ2QsY0FBYztFQUNkLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsY0FBYztFQUNkLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixXQUFXO0FBQ2IiLCJzb3VyY2VzQ29udGVudCI6WyI6cm9vdCB7XG4gIC0tcmVhY2gtbWVudS1idXR0b246IDE7XG59XG5cbi5saXN0IHtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm9yZGVyOiAxcHggc29saWQgI0Q4RDhEODtcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xuICBib3gtc2hhZG93OiAwIDFweCA1cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICBmb250LXNpemU6IDE0cHg7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgbGVmdDogMDtcbiAgbWluLXdpZHRoOiAxNzBweDtcbiAgb3V0bGluZTogbm9uZTtcbiAgcGFkZGluZzogMTBweCAwO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IDEwMDA7XG59XG5cbi5pdGVtIHtcbiAgY29sb3I6ICMzMzM7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBhZGRpbmc6IDdweCA0MHB4IDdweCAyMHB4O1xuICBvdXRsaW5lOiBub25lO1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuXG5cbltkYXRhLXJlYWNoLW1lbnUtaXRlbV1bZGF0YS1zZWxlY3RlZF0ge1xuICBiYWNrZ3JvdW5kOiAjRjBGMEYwO1xufVxuXG4uc2VwYXJhdG9yIHtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNEOEQ4RDg7XG4gIGNvbG9yOiAjOTY5Njk2O1xuICBkaXNwbGF5OiBibG9jaztcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgZm9udC1zaXplOiAxMXB4O1xuICBwYWRkaW5nOiA1cHggMDtcbiAgbWFyZ2luOiA1cHggMjBweCAxMHB4IDIwcHg7XG59XG5cbi5zcGFjZXIge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHdpZHRoOiAxMHB4O1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>:root {
+  --reach-menu-button: 1;
+}
+
+.vb0q01gYhxX6xjoZDd0O4Qb7TxhiDaKD {
+  background: #fff;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  left: 0;
+  min-width: 170px;
+  outline: none;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.OZgYUTQTaNinWRRb5SyjeQ8WEtA09RuF {
+  color: #333;
+  cursor: pointer;
+  display: block;
+  padding: 7px 40px 7px 20px;
+  white-space: nowrap;
+}
+
+.p1JvbEyYxbSfz1_7MmGKUQzT0SOap8Vu {
+  display: inline-block;
+  width: 10px;
+}
+
+.IJDXXdfgVXcY6MRd9u66HghwrbdhBtJv {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3VpL2NvbXBvbmVudHMvU3Vic2NyaWJlL2luZGV4LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixvQ0FBb0M7RUFDcEMsa0JBQWtCO0VBQ2xCLHdDQUF3QztFQUN4QyxlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixPQUFPO0VBQ1AsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixlQUFlO0VBQ2YsYUFBYTtBQUNmOztBQUVBO0VBQ0UsV0FBVztFQUNYLGVBQWU7RUFDZixjQUFjO0VBQ2QsMEJBQTBCO0VBQzFCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULGdCQUFnQjtFQUNoQiw4QkFBOEI7RUFDOUIsVUFBVTtFQUNWLFdBQVc7RUFDWCxtQkFBbUI7QUFDckIiLCJzb3VyY2VzQ29udGVudCI6WyI6cm9vdCB7XG4gIC0tcmVhY2gtbWVudS1idXR0b246IDE7XG59XG5cbi5saXN0IHtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgYm9yZGVyOiAxcHggc29saWQgcmdiKDIxNiwgMjE2LCAyMTYpO1xuICBib3JkZXItcmFkaXVzOiAzcHg7XG4gIGJveC1zaGFkb3c6IDAgMXB4IDVweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBsZWZ0OiAwO1xuICBtaW4td2lkdGg6IDE3MHB4O1xuICBvdXRsaW5lOiBub25lO1xuICBwYWRkaW5nOiAxMHB4IDA7XG4gIHotaW5kZXg6IDEwMDA7XG59XG5cbi5pdGVtIHtcbiAgY29sb3I6ICMzMzM7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBhZGRpbmc6IDdweCA0MHB4IDdweCAyMHB4O1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuXG4uc3BhY2VyIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB3aWR0aDogMTBweDtcbn1cblxuLmludmlzaWJsZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiBhdXRvO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBjbGlwOiByZWN0KDFweCwgMXB4LCAxcHgsIDFweCk7XG4gIHdpZHRoOiAxcHg7XG4gIGhlaWdodDogMXB4O1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<body class="platform-exp"><div></div>
+  
+  
+  
+
+  <a href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#mainContent" class="visually-hidden-focusable">
+    Skip to Main Content
+</a>
+<div class="wcag-compliant-header">
+    <header id="vex_header" class="navbar navbar-expand-lg p-0" role="banner">
+        <div class="container-fluid first-section w-100">
+            <a class="navbar-brand-vex m-0" href="https://www.vexrobotics.com/" aria-label="VEX Robotics homepage" style="padding: 0.5rem">
+                <img class="vex-navbar-image" src="./Cortex to EXP – VEX_files/vexRed.svg" alt="VEX Robotics Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Mobile -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-lg-none">
+                    <nav role="navigation">
+                        <div class="d-flex flex-column loaded">
+                            <!-- LOAD IN DEM CATS FROM JS -->
+                        <a href="https://kb.vex.com/" class="nav-link" aria-label="VEX Library Homepage">VEX Library</a><span class="nav-link stem-labs-link" aria-hidden="true"></span><a href="https://kb.vex.com/hc/en-us/categories/360004035932-123" class="nav-link" aria-label="123 page">123</a><a href="https://kb.vex.com/hc/en-us/categories/360004035912-GO" class="nav-link" aria-label="GO page">GO</a><a href="https://kb.vex.com/hc/en-us/categories/34909139535892-AIM" class="nav-link" aria-label="AIM page">AIM</a><a href="https://kb.vex.com/hc/en-us/categories/360002324792-IQ" class="nav-link" aria-label="IQ page">IQ</a><a href="https://kb.vex.com/hc/en-us/categories/4414790180884-EXP" class="nav-link" aria-label="EXP page">EXP</a><a href="https://kb.vex.com/hc/en-us/categories/360002333191-V5" class="nav-link" aria-label="V5 page">V5</a><a href="https://kb.vex.com/hc/en-us/categories/8839576310164-CTE" class="nav-link" aria-label="CTE page">CTE</a><a href="https://kb.vex.com/hc/en-us/categories/38705561369748-AIR" class="nav-link" aria-label="AIR page">AIR</a><a href="https://kb.vex.com/hc/en-us/categories/360002932231-VEXcode-VR" class="nav-link" aria-label="VEXcode VR page">VEXcode VR</a><a href="https://kb.vex.com/hc/en-us/categories/360002520052-Education" class="nav-link" aria-label="Education page">Education</a><a href="https://kb.vex.com/hc/en-us/categories/360002449852-General" class="nav-link" aria-label="General page">General</a><a href="https://kb.vex.com/hc/en-us/categories/360002449872-Cortex" class="nav-link" aria-label="Cortex page">Cortex</a></div>
+                        <a href="https://getstarted.vex.com/" class="nav-link" aria-label="Get Started">Get Started</a>
+                        <a href="https://education.vex.com/" class="nav-link" aria-label="VEX STEM Labs">STEM Labs</a>
+                        <a href="https://pd.vex.com/" class="nav-link" aria-label="PD Plus">PD+</a>
+                        <a href="https://www.vexforum.com/" class="nav-link" aria-label="Forum">Forum</a>
+                        <a href="https://kb.vex.com/" class="nav-link current mobileCurrent" aria-label="Online Help">Online Help</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div id="langSwitcherMobile" class="language-picker position-relative">
+                
+                <a id="langswitch-toggle" class="lang-toggle btn btn--default">
+                    English (US)
+                </a>
+                <div class="overlay-mobile"></div>
+                <ul id="mobile-dropdown" class="row">
+                    
+                    <a href="https://kb.vex.com/hc/change_language/ar?return_to=%2Fhc%2Far%2Farticles%2F13559808395412-%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B1%25D9%2582%25D9%258A%25D8%25A9-%25D9%2585%25D9%2586-Cortex-%25D8%25A5%25D9%2584%25D9%2589-EXP" dir="rtl" rel="nofollow" class="col-6">
+                        العربية
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/bn?return_to=%2Fhc%2Fbn%2Farticles%2F13559808395412-%25E0%25A6%2595%25E0%25A6%25B0-%25E0%25A6%259F%25E0%25A7%2587%25E0%25A6%2595-%25E0%25A6%25B8-%25E0%25A6%25A5%25E0%25A7%2587%25E0%25A6%2595%25E0%25A7%2587-EXP-%25E0%25A6%25A4%25E0%25A7%2587-%25E0%25A6%2586%25E0%25A6%25AA%25E0%25A6%2597-%25E0%25A6%25B0%25E0%25A7%2587%25E0%25A6%25A1-%25E0%25A6%2595%25E0%25A6%25B0%25E0%25A6%25BE-%25E0%25A6%25B9%25E0%25A6%259A-%25E0%25A6%259B%25E0%25A7%2587" dir="ltr" rel="nofollow" class="col-6">
+                        বাংলা
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/cs?return_to=%2Fhc%2Fcs%2Farticles%2F13559808395412-Upgrade-z-Cortex-na-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Čeština
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/de?return_to=%2Fhc%2Fde%2Farticles%2F13559808395412-Upgrade-von-Cortex-auf-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Deutsch
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/es?return_to=%2Fhc%2Fes%2Farticles%2F13559808395412-Actualizaci%25C3%25B3n-de-Cortex-a-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Español
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/es-419?return_to=%2Fhc%2Fes-419%2Farticles%2F13559808395412-Actualizaci%25C3%25B3n-de-Cortex-a-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Español (Latinoamérica)
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/fi?return_to=%2Fhc%2Ffi%2Farticles%2F13559808395412-P%25C3%25A4ivitys-Cortexista-EXP-hen" dir="ltr" rel="nofollow" class="col-6">
+                        Suomi
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/fr?return_to=%2Fhc%2Ffr%2Farticles%2F13559808395412-Mise-%25C3%25A0-niveau-de-Cortex-vers-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Français
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/hi?return_to=%2Fhc%2Fhi%2Farticles%2F13559808395412-%25E0%25A4%2595%25E0%25A5%2589%25E0%25A4%25B0-%25E0%25A4%259F%25E0%25A5%2587%25E0%25A4%2595-%25E0%25A4%25B8-%25E0%25A4%25B8%25E0%25A5%2587-EXP-%25E0%25A4%25A4%25E0%25A4%2595-%25E0%25A4%2585%25E0%25A4%25AA%25E0%25A4%2597-%25E0%25A4%25B0%25E0%25A5%2587%25E0%25A4%25A1-%25E0%25A4%2595%25E0%25A4%25B0%25E0%25A4%25A8%25E0%25A4%25BE" dir="ltr" rel="nofollow" class="col-6">
+                        हिंदी
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/hu?return_to=%2Fhc%2Fhu%2Farticles%2F13559808395412-Friss%25C3%25ADt%25C3%25A9s-Cortexr%25C5%2591l-EXP-re" dir="ltr" rel="nofollow" class="col-6">
+                        Magyar
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/id?return_to=%2Fhc%2Fid%2Farticles%2F13559808395412-Upgrade-dari-Cortex-ke-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Bahasa Indonesia
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/it?return_to=%2Fhc%2Fit%2Farticles%2F13559808395412-Aggiornamento-da-Cortex-a-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Italiano
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/ja?return_to=%2Fhc%2Fja%2Farticles%2F13559808395412-Cortex-%25E3%2581%258B%25E3%2582%2589-EXP-%25E3%2581%25B8%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2582%25B0%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2589" dir="ltr" rel="nofollow" class="col-6">
+                        日本語
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/kk?return_to=%2Fhc%2Fkk%2Farticles%2F13559808395412-Cortex-%25D1%2582%25D0%25B5%25D0%25BD-EXP-%25D0%25B3%25D0%25B5-%25D0%25B4%25D0%25B5%25D0%25B9%25D1%2596%25D0%25BD-%25D0%25B6%25D0%25B0%25D2%25A3%25D0%25B0%25D1%2580%25D1%2582%25D1%2583" dir="ltr" rel="nofollow" class="col-6">
+                        Қазақ тілі
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/ko?return_to=%2Fhc%2Fko%2Farticles%2F13559808395412-Cortex%25EC%2597%2590%25EC%2584%259C-EXP%25EB%25A1%259C-%25EC%2597%2585%25EA%25B7%25B8%25EB%25A0%2588%25EC%259D%25B4%25EB%2593%259C" dir="ltr" rel="nofollow" class="col-6">
+                        한국어
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/lt?return_to=%2Fhc%2Flt%2Farticles%2F13559808395412-Atnaujinimas-i%25C5%25A1-Cortex-%25C4%25AF-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Lietuvių
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/lv?return_to=%2Fhc%2Flv%2Farticles%2F13559808395412-Jaunin%25C4%2581%25C5%25A1ana-no-Cortex-uz-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Latviešu
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/ml?return_to=%2Fhc%2Fml%2Farticles%2F13559808395412-%25E0%25B4%2595%25E0%25B5%258B%25E0%25B5%25BC%25E0%25B4%259F-%25E0%25B4%259F%25E0%25B5%2586%25E0%25B4%2595-%25E0%25B4%25B8%25E0%25B4%25BF%25E0%25B5%25BD-%25E0%25B4%25A8%25E0%25B4%25BF%25E0%25B4%25A8-%25E0%25B4%25A8-EXP-%25E0%25B4%25B2%25E0%25B5%2587%25E0%25B4%2595-%25E0%25B4%2595-%25E0%25B4%2585%25E0%25B4%25AA-%25E0%25B4%2597-%25E0%25B4%25B0%25E0%25B5%2587%25E0%25B4%25A1-%25E0%25B4%259A%25E0%25B5%2586%25E0%25B4%25AF-%25E0%25B4%25AF%25E0%25B5%2581%25E0%25B4%25A8-%25E0%25B4%25A8%25E0%25B5%2581" dir="ltr" rel="nofollow" class="col-6">
+                        മലയാളം
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/nl?return_to=%2Fhc%2Fnl%2Farticles%2F13559808395412-Upgraden-van-Cortex-naar-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Nederlands
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/pl?return_to=%2Fhc%2Fpl%2Farticles%2F13559808395412-Aktualizacja-z-Cortexu-do-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Polski
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/pt?return_to=%2Fhc%2Fpt%2Farticles%2F13559808395412-Atualizando-do-Cortex-para-o-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Português
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/ru?return_to=%2Fhc%2Fru%2Farticles%2F13559808395412-%25D0%259E%25D0%25B1%25D0%25BD%25D0%25BE%25D0%25B2%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B5-%25D1%2581-Cortex-%25D0%25B4%25D0%25BE-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Русский
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/th?return_to=%2Fhc%2Fth%2Farticles%2F13559808395412-%25E0%25B8%2581%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%25AD%25E0%25B8%25B1%25E0%25B8%259E%25E0%25B9%2580%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%2594%25E0%25B8%2588%25E0%25B8%25B2%25E0%25B8%2581-Cortex-%25E0%25B9%2580%25E0%25B8%259B-%25E0%25B8%2599-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        ไทย
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/tr?return_to=%2Fhc%2Ftr%2Farticles%2F13559808395412-Cortex-ten-EXP-ye-y%25C3%25BCkseltme" dir="ltr" rel="nofollow" class="col-6">
+                        Türkçe
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/uk?return_to=%2Fhc%2Fuk%2Farticles%2F13559808395412-%25D0%259E%25D0%25BD%25D0%25BE%25D0%25B2%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25BD%25D1%258F-%25D0%25B7-Cortex-%25D0%25B4%25D0%25BE-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Українська
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/vi?return_to=%2Fhc%2Fvi%2Farticles%2F13559808395412-N%25C3%25A2ng-c%25E1%25BA%25A5p-t%25E1%25BB%25AB-Cortex-l%25C3%25AAn-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        Tiếng Việt
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/zh-cn?return_to=%2Fhc%2Fzh-cn%2Farticles%2F13559808395412-%25E4%25BB%258E-Cortex-%25E5%258D%2587%25E7%25BA%25A7%25E5%2588%25B0-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        简体中文
+                    </a>
+                    
+                    <a href="https://kb.vex.com/hc/change_language/zh-tw?return_to=%2Fhc%2Fzh-tw%2Farticles%2F13559808395412-%25E5%25BE%259E-Cortex-%25E5%258D%2587%25E7%25B4%259A%25E5%2588%25B0-EXP" dir="ltr" rel="nofollow" class="col-6">
+                        繁體中文
+                    </a>
+                    
+                </ul>
+                
+            </div>
+            <div class="d-none d-lg-flex ms-auto">
+                <a href="https://getstarted.vex.com/" class="nav-link" aria-label="Get Started">Get Started</a>
+                <a href="https://education.vex.com/" class="nav-link" aria-label="VEX STEM Labs">STEM Labs</a>
+                <a href="https://pd.vex.com/" class="nav-link" aria-label="PD Plus">PD+</a>
+                <a href="https://www.vexforum.com/" class="nav-link" aria-label="Forum">Forum</a>
+                <a href="https://kb.vex.com/" class="nav-link current" aria-label="Online Help">Online Help</a>
+            </div>
+        </div>
+    </header>
+    <div class="sub-nav d-block">
+        <div class="holder d-flex" style="display: flex; height: 3em;">
+            <div class="search-box search-box--topbar loaded" data-search-topbar="" style="padding: 2.2rem; align-content: center; padding-top: 0; padding-bottom: 0; margin-top: 0rem; padding-top: 0rem;">
+                <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="https://kb.vex.com/hc/en-us/search" accept-charset="UTF-8" method="get">
+                    <input name="utf8" type="hidden" value="✓" autocomplete="off">
+                    <input type="search" name="query" id="query" placeholder="Search the VEX Library" autocomplete="off" aria-label="Search" aria-autocomplete="both" aria-expanded="false" role="combobox" aria-owns="autocomplete-listbox">
+                    <input type="submit" name="commit" value="Search">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="sub-nav d-none d-lg-block bg-nav">
+        <div class="container-fluid second-section">
+            <nav role="navigation" class="d-flex" style="display: flex !important;justify-content: space-between;align-items: baseline;">
+                <div class="d-flex flex-wrap loaded">
+                    <!-- LOAD IN DEM CATS FROM JS -->
+                <a href="https://kb.vex.com/" class="nav-link" aria-label="VEX Library Homepage">VEX Library</a><span class="nav-link stem-labs-link" aria-hidden="true"></span><a href="https://kb.vex.com/hc/en-us/categories/360004035932-123" class="nav-link" aria-label="123 page">123</a><a href="https://kb.vex.com/hc/en-us/categories/360004035912-GO" class="nav-link" aria-label="GO page">GO</a><a href="https://kb.vex.com/hc/en-us/categories/34909139535892-AIM" class="nav-link" aria-label="AIM page">AIM</a><a href="https://kb.vex.com/hc/en-us/categories/360002324792-IQ" class="nav-link" aria-label="IQ page">IQ</a><a href="https://kb.vex.com/hc/en-us/categories/4414790180884-EXP" class="nav-link" aria-label="EXP page">EXP</a><a href="https://kb.vex.com/hc/en-us/categories/360002333191-V5" class="nav-link" aria-label="V5 page">V5</a><a href="https://kb.vex.com/hc/en-us/categories/8839576310164-CTE" class="nav-link" aria-label="CTE page">CTE</a><a href="https://kb.vex.com/hc/en-us/categories/38705561369748-AIR" class="nav-link" aria-label="AIR page">AIR</a><a href="https://kb.vex.com/hc/en-us/categories/360002932231-VEXcode-VR" class="nav-link" aria-label="VEXcode VR page">VEXcode VR</a><a href="https://kb.vex.com/hc/en-us/categories/360002520052-Education" class="nav-link" aria-label="Education page">Education</a><a href="https://kb.vex.com/hc/en-us/categories/360002449852-General" class="nav-link" aria-label="General page">General</a><a href="https://kb.vex.com/hc/en-us/categories/360002449872-Cortex" class="nav-link" aria-label="Cortex page">Cortex</a></div>
+                <div id="desktop_category_links" class="category_links">
+                    <div id="langSwitcherDesktop" class="lang-switcher-container">
+                        
+                        <a class="current-language fw-bold" tabindex="0">
+                            English (US)
+                        </a>
+                        <ul class="language-options m-0 p-0 row" style="display: none;">
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/ar?return_to=%2Fhc%2Far%2Farticles%2F13559808395412-%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B1%25D9%2582%25D9%258A%25D8%25A9-%25D9%2585%25D9%2586-Cortex-%25D8%25A5%25D9%2584%25D9%2589-EXP" dir="rtl" rel="nofollow">
+                                    العربية
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/bn?return_to=%2Fhc%2Fbn%2Farticles%2F13559808395412-%25E0%25A6%2595%25E0%25A6%25B0-%25E0%25A6%259F%25E0%25A7%2587%25E0%25A6%2595-%25E0%25A6%25B8-%25E0%25A6%25A5%25E0%25A7%2587%25E0%25A6%2595%25E0%25A7%2587-EXP-%25E0%25A6%25A4%25E0%25A7%2587-%25E0%25A6%2586%25E0%25A6%25AA%25E0%25A6%2597-%25E0%25A6%25B0%25E0%25A7%2587%25E0%25A6%25A1-%25E0%25A6%2595%25E0%25A6%25B0%25E0%25A6%25BE-%25E0%25A6%25B9%25E0%25A6%259A-%25E0%25A6%259B%25E0%25A7%2587" dir="ltr" rel="nofollow">
+                                    বাংলা
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/cs?return_to=%2Fhc%2Fcs%2Farticles%2F13559808395412-Upgrade-z-Cortex-na-EXP" dir="ltr" rel="nofollow">
+                                    Čeština
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/de?return_to=%2Fhc%2Fde%2Farticles%2F13559808395412-Upgrade-von-Cortex-auf-EXP" dir="ltr" rel="nofollow">
+                                    Deutsch
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/es?return_to=%2Fhc%2Fes%2Farticles%2F13559808395412-Actualizaci%25C3%25B3n-de-Cortex-a-EXP" dir="ltr" rel="nofollow">
+                                    Español
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/es-419?return_to=%2Fhc%2Fes-419%2Farticles%2F13559808395412-Actualizaci%25C3%25B3n-de-Cortex-a-EXP" dir="ltr" rel="nofollow">
+                                    Español (Latinoamérica)
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/fi?return_to=%2Fhc%2Ffi%2Farticles%2F13559808395412-P%25C3%25A4ivitys-Cortexista-EXP-hen" dir="ltr" rel="nofollow">
+                                    Suomi
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/fr?return_to=%2Fhc%2Ffr%2Farticles%2F13559808395412-Mise-%25C3%25A0-niveau-de-Cortex-vers-EXP" dir="ltr" rel="nofollow">
+                                    Français
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/hi?return_to=%2Fhc%2Fhi%2Farticles%2F13559808395412-%25E0%25A4%2595%25E0%25A5%2589%25E0%25A4%25B0-%25E0%25A4%259F%25E0%25A5%2587%25E0%25A4%2595-%25E0%25A4%25B8-%25E0%25A4%25B8%25E0%25A5%2587-EXP-%25E0%25A4%25A4%25E0%25A4%2595-%25E0%25A4%2585%25E0%25A4%25AA%25E0%25A4%2597-%25E0%25A4%25B0%25E0%25A5%2587%25E0%25A4%25A1-%25E0%25A4%2595%25E0%25A4%25B0%25E0%25A4%25A8%25E0%25A4%25BE" dir="ltr" rel="nofollow">
+                                    हिंदी
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/hu?return_to=%2Fhc%2Fhu%2Farticles%2F13559808395412-Friss%25C3%25ADt%25C3%25A9s-Cortexr%25C5%2591l-EXP-re" dir="ltr" rel="nofollow">
+                                    Magyar
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/id?return_to=%2Fhc%2Fid%2Farticles%2F13559808395412-Upgrade-dari-Cortex-ke-EXP" dir="ltr" rel="nofollow">
+                                    Bahasa Indonesia
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/it?return_to=%2Fhc%2Fit%2Farticles%2F13559808395412-Aggiornamento-da-Cortex-a-EXP" dir="ltr" rel="nofollow">
+                                    Italiano
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/ja?return_to=%2Fhc%2Fja%2Farticles%2F13559808395412-Cortex-%25E3%2581%258B%25E3%2582%2589-EXP-%25E3%2581%25B8%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2582%25B0%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2589" dir="ltr" rel="nofollow">
+                                    日本語
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/kk?return_to=%2Fhc%2Fkk%2Farticles%2F13559808395412-Cortex-%25D1%2582%25D0%25B5%25D0%25BD-EXP-%25D0%25B3%25D0%25B5-%25D0%25B4%25D0%25B5%25D0%25B9%25D1%2596%25D0%25BD-%25D0%25B6%25D0%25B0%25D2%25A3%25D0%25B0%25D1%2580%25D1%2582%25D1%2583" dir="ltr" rel="nofollow">
+                                    Қазақ тілі
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/ko?return_to=%2Fhc%2Fko%2Farticles%2F13559808395412-Cortex%25EC%2597%2590%25EC%2584%259C-EXP%25EB%25A1%259C-%25EC%2597%2585%25EA%25B7%25B8%25EB%25A0%2588%25EC%259D%25B4%25EB%2593%259C" dir="ltr" rel="nofollow">
+                                    한국어
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/lt?return_to=%2Fhc%2Flt%2Farticles%2F13559808395412-Atnaujinimas-i%25C5%25A1-Cortex-%25C4%25AF-EXP" dir="ltr" rel="nofollow">
+                                    Lietuvių
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/lv?return_to=%2Fhc%2Flv%2Farticles%2F13559808395412-Jaunin%25C4%2581%25C5%25A1ana-no-Cortex-uz-EXP" dir="ltr" rel="nofollow">
+                                    Latviešu
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/ml?return_to=%2Fhc%2Fml%2Farticles%2F13559808395412-%25E0%25B4%2595%25E0%25B5%258B%25E0%25B5%25BC%25E0%25B4%259F-%25E0%25B4%259F%25E0%25B5%2586%25E0%25B4%2595-%25E0%25B4%25B8%25E0%25B4%25BF%25E0%25B5%25BD-%25E0%25B4%25A8%25E0%25B4%25BF%25E0%25B4%25A8-%25E0%25B4%25A8-EXP-%25E0%25B4%25B2%25E0%25B5%2587%25E0%25B4%2595-%25E0%25B4%2595-%25E0%25B4%2585%25E0%25B4%25AA-%25E0%25B4%2597-%25E0%25B4%25B0%25E0%25B5%2587%25E0%25B4%25A1-%25E0%25B4%259A%25E0%25B5%2586%25E0%25B4%25AF-%25E0%25B4%25AF%25E0%25B5%2581%25E0%25B4%25A8-%25E0%25B4%25A8%25E0%25B5%2581" dir="ltr" rel="nofollow">
+                                    മലയാളം
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/nl?return_to=%2Fhc%2Fnl%2Farticles%2F13559808395412-Upgraden-van-Cortex-naar-EXP" dir="ltr" rel="nofollow">
+                                    Nederlands
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/pl?return_to=%2Fhc%2Fpl%2Farticles%2F13559808395412-Aktualizacja-z-Cortexu-do-EXP" dir="ltr" rel="nofollow">
+                                    Polski
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/pt?return_to=%2Fhc%2Fpt%2Farticles%2F13559808395412-Atualizando-do-Cortex-para-o-EXP" dir="ltr" rel="nofollow">
+                                    Português
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/ru?return_to=%2Fhc%2Fru%2Farticles%2F13559808395412-%25D0%259E%25D0%25B1%25D0%25BD%25D0%25BE%25D0%25B2%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25B8%25D0%25B5-%25D1%2581-Cortex-%25D0%25B4%25D0%25BE-EXP" dir="ltr" rel="nofollow">
+                                    Русский
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/th?return_to=%2Fhc%2Fth%2Farticles%2F13559808395412-%25E0%25B8%2581%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%25AD%25E0%25B8%25B1%25E0%25B8%259E%25E0%25B9%2580%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%2594%25E0%25B8%2588%25E0%25B8%25B2%25E0%25B8%2581-Cortex-%25E0%25B9%2580%25E0%25B8%259B-%25E0%25B8%2599-EXP" dir="ltr" rel="nofollow">
+                                    ไทย
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/tr?return_to=%2Fhc%2Ftr%2Farticles%2F13559808395412-Cortex-ten-EXP-ye-y%25C3%25BCkseltme" dir="ltr" rel="nofollow">
+                                    Türkçe
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/uk?return_to=%2Fhc%2Fuk%2Farticles%2F13559808395412-%25D0%259E%25D0%25BD%25D0%25BE%25D0%25B2%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25BD%25D1%258F-%25D0%25B7-Cortex-%25D0%25B4%25D0%25BE-EXP" dir="ltr" rel="nofollow">
+                                    Українська
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/vi?return_to=%2Fhc%2Fvi%2Farticles%2F13559808395412-N%25C3%25A2ng-c%25E1%25BA%25A5p-t%25E1%25BB%25AB-Cortex-l%25C3%25AAn-EXP" dir="ltr" rel="nofollow">
+                                    Tiếng Việt
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/zh-cn?return_to=%2Fhc%2Fzh-cn%2Farticles%2F13559808395412-%25E4%25BB%258E-Cortex-%25E5%258D%2587%25E7%25BA%25A7%25E5%2588%25B0-EXP" dir="ltr" rel="nofollow">
+                                    简体中文
+                                </a></li>
+                            
+                            <li class="col-6"><a href="https://kb.vex.com/hc/change_language/zh-tw?return_to=%2Fhc%2Fzh-tw%2Farticles%2F13559808395412-%25E5%25BE%259E-Cortex-%25E5%258D%2587%25E7%25B4%259A%25E5%2588%25B0-EXP" dir="ltr" rel="nofollow">
+                                    繁體中文
+                                </a></li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<div id="siteDynamicContent" data-inthisarticle="In this article"></div>
+<!--
+<p style=" text-align: center;">
+<a href="https://pd.vex.com/vex-educator-conference" aria-label="2025 VEX Educators Conference Page" data-cmp-ab="2"><img alt="" src="https://content.vexrobotics.com/assets/plc/2025-reg-open-banner.png?v=2" data-cmp-ab="2" data-cmp-info="10" style="max-width: 1360px;margin: auto !important;width: 100%;"></a>
+</p>
+-->
+
+  <main role="main">
+    <script>
+    var articleTitle = '<li title="Upgrading from Cortex to EXP">Upgrading from Cortex to EXP</li>';
+</script>
+<div id="articlePage" data-articleid="13559808395412" data-labels="VEX EXP " class="">
+
+    <header>
+        <section class="hero-unit container" data-hero-unit="">
+            <div class="container">
+                <div class="container-inner">
+                    <div class="article-page__container platformLogo"></div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+        <div class="container-inner">
+            <div>
+                <div>
+                    <article class="article clearfix" itemscope="" itemtype="http://schema.org/Article">
+                        <div class="container-inner" data-search-box="">
+                            <div class="breadcrumbs-wrapper">
+                                <ol class="breadcrumbs">
+  
+    <li title="VEX Library">
+      
+        <a href="https://kb.vex.com/hc/en-us">VEX Library</a>
+      
+    </li>
+  
+    <li title="EXP">
+      
+        <a href="https://kb.vex.com/hc/en-us/categories/4414790180884-EXP?sc=get-started">EXP</a>
+      
+    </li>
+  
+    <li title="Get Started">
+      
+        <a href="https://kb.vex.com/hc/en-us/categories/4414790180884-EXP?sc=get-started">Get Started</a>
+      
+    </li>
+  
+    
+  
+<li title="Upgrading from Cortex to EXP">Upgrading from Cortex to EXP</li></ol>
+
+                            </div>
+                            <h1 class="hero-unit__title" id="article-title">
+                                 Upgrading from Cortex to EXP
+                            </h1>
+                        </div>
+                        <div class="body-container">
+                            <!-- Table of Contents Sidebar -->
+                            <aside class="sidebar-container" role="complementary" id="table-of-contents" tabindex="-1"><div class="toc"><p class="h4">In this article</p><ol><li class=""><a href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#structure-compatibility-header-1">Structure Compatibility</a></li><li class=""><a href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#electronics-compatibility-header-2">Electronics Compatibility</a><ol><li class=""><a href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#exp-brain-specifications-header-3">EXP Brain Specifications</a></li><li class="active"><a href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#cortex-electronics-header-4">Cortex Electronics</a></li></ol></li><li><a href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#exp-electronics-header-5">EXP Electronics</a></li></ol></div></aside>
+                            <div class="article__body markdown" data-article="" itemprop="articleBody" id="article-body" tabindex="0">
+                                <div class="alert alert-warning langNoAvailable" role="alert" style="display: none;">
+                                    This article is not viewable in your language. Please check back at a future date.
+                                </div>
+                                <div class="alert alert-warning machineTranslators" role="alert" style="display: none;">
+                                    This article's translation was completed by machine translation. Please forgive any possible errors.
+                                </div>
+                                
+                                <p>This article is for those who currently are using the Cortex System and are upgrading / considering upgrading to the VEX EXP System. The purpose of this article is to cover what contents from Cortex can be used with the VEX EXP System.</p>
+<h2 id="structure-compatibility-header-1">Structure Compatibility</h2>
+<p>EXP Structure (metal pieces, wheels, gears) was designed with backwards compatibility in mind. This means, the standard used to create Cortex Structure is the same standard used for EXP. Therefore, the pitch (or distance between holes on structural components) is the same, so Cortex Structure can be aligned and fastened to EXP structure.</p>
+<p>The EXP System utilizes Star Drive Screws and Low Profile Nuts, so you can fasten your builds more securely than before with rivets, although you can still use whatever you are most comfortable with. When upgrading from Cortex to EXP, hardware, gears, and wheels will work with one another.</p>
+<div class="row">
+<div class="column column--lg-6">
+<div style="text-align: center;">
+<p><img style="width: 240px;" src="./Cortex to EXP – VEX_files/image5.png" alt="Angled view of the VEX Cortex Clawbot build." tabindex="0"></p>
+</div>
+</div>
+<div class="column column--lg-6">
+<div style="text-align: center;">
+<p><img style="width: 300px;" src="./Cortex to EXP – VEX_files/image2.png" alt="Angled view of the VEX EXP Clawbot build." tabindex="0"></p>
+</div>
+</div>
+</div>
+<h2 id="electronics-compatibility-header-2">Electronics Compatibility</h2>
+<p>The root of EXP is based upon the new VEX EXP Brain. Detailed below, it replaces the VEX ARM Cortex-based Microcontroller. This more powerful Brain allows you to control not only the new sensors and motors found in the EXP Kit, but also most of the Cortex Sensors you are familiar with so you will not have to give up anything when deciding to upgrade.</p>
+<h3 id="exp-brain-specifications-header-3">EXP Brain Specifications</h3>
+<div class="row two-col-row">
+<div class="column column--md-8">
+<p><img src="./Cortex to EXP – VEX_files/image18.png" alt="VEX EXP Robot Brain piece." tabindex="0"></p>
+</div>
+<div class="column column--md-4">
+<p>Improved Robot</p>
+<ul>
+<li>10 Smart Ports on the Brain to communicate with a multitude of motors and sensors</li>
+<li>8 3-Wire Ports to communicate with both new EXP Sensors and Cortex Sensors (more information below)</li>
+<li>1.7” Color Screen with buttons allowing for a total of 8 stored user projects</li>
+<li>Built in Inertial Sensor, 6-axis Gyro/Accelerometer</li>
+<li>Built-in Bluetooth Radio paired with the EXP Controller (more information below)</li>
+<li>Micro SD Card for Datalogging and Storage</li>
+<li>The Brain also has a real-time motor and sensor dashboard and built-in configurable drive program, allowing for immediate troubleshooting and demonstration opportunities without the need for coding</li>
+<li>Programmed in VEXcode Blocks, C++, and Python (more information below)</li>
+</ul>
+<p>The EXP Brain replaces the VEX ARM Cortex-based Microcontroller, allowing for a lower barrier of entry to the VEX system with how simple it is to use.</p>
+</div>
+</div>
+<p>The EXP Brain is able to power and control mostly all of the sensors and motors you have been using and are used to from Cortex. If you are wanting to upgrade to EXP but have reservations that you will lose valuable electronics from Cortex, EXP was specifically designed to still support past electronics, while at the same time introducing much more powerful sensors and motors.</p>
+<h3 id="cortex-electronics-header-4">Cortex Electronics</h3>
+<p>The following list is of 3-Wire Sensors and Motors from the Cortex System and whether or not they are compatible with the EXP Brain and EXP System. Simply plug your compatible 3-Wire electronics the same way you have been doing with Cortex into the EXP Brain, and watch it come to life.</p>
+<table style="border-collapse: collapse; width: 100%; height: 374px;" border="1">
+<tbody>
+<tr style="height: 22px;">
+<th class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><strong>Name</strong></th>
+<th class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><strong>Product Image</strong></th>
+<th class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><strong>Part Number</strong></th>
+<th class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><strong>EXP Compatibility</strong></th>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Limit Switch</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image14.png" alt="VEX Cortex Limit Switch piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2174.html">276-2174</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Bumper Switch</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image8.png" alt="VEX Cortex Bumper Switch piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2159.html">276-2159</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Optical Shaft Encoder</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image19.png" alt="VEX Cortex Optical Shaft Encoder piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2156.html">276-2156</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Ultrasonic Range Finder</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image17.png" alt="VEX Cortex Ultrasonic Range Finder piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2155.html">276-2155</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Line Tracker</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image24.png" alt="VEX Cortex Line Tracker piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2154.html">276-2154</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Light Sensor</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image20.png" alt="VEX Cortex Light Sensor piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2158.html">276-2158</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Potentiometer V1&amp;V2</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<img src="./Cortex to EXP – VEX_files/image15.png" alt="VEX Cortex Potentiometer V1 piece." tabindex="0"><img src="./Cortex to EXP – VEX_files/image13.png" alt="VEX Cortex Potentiometer V2 piece." tabindex="0">
+</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>276-2216</p>
+<p><a href="https://www.vexrobotics.com/276-7417.html">276-7417</a></p>
+</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">LED Indicator</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image11.png" alt="VEX Cortex LED Indicator piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2176.html">276-2176</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Gyro</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image9.png" alt="VEX Cortex Gyro piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">276-2333</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Motor 393</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image12.png" alt="VEX Cortex Motor 393 piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/motors.html">276-2177</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible*</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Servo</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image22.png" alt="VEX Cortex Servo piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/motors.html">276-2162</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible*</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Accelerometer</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image23.png" alt="VEX Cortex Accelerometer piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2332.html">276-2332</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Compatible</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">VEX ARM Cortex-based Microcontroller</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image1.png" alt="VEX ARM Cortex-based Microcontroller piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2194.html">276-2194</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>Not Compatible</p>
+<p><span class="wysiwyg-font-size-small">replaced with the VEX EXP Brain</span></p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">VEXnet Joystick</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image4.png" alt="VEX Cortex VEXnet Joystick piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/joysticks.html">276-2192</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>Not Compatible</p>
+<p><span class="wysiwyg-font-size-small">replaced with the VEX EXP Controller</span></p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">VEXnet Key 2.0</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/276-3245-vexnet-key-2.webp" alt="VEX Cortex VEXnet Key 2.0 piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-3245.html">276-3245</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>Not Compatible</p>
+<p><span class="wysiwyg-font-size-small">replaced with the EXP Brain and Controller Built-In Radio</span></p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">7.2V Robot Battery NiMH 2000mAh</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image25.png" alt="VEX Cortex 7.2V Robot Battery NiMH 2000mAh piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/batteries-and-chargers.html">276-1491</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>Not Compatible</p>
+<p><span class="wysiwyg-font-size-small">replaced with the VEX EXP Battery</span></p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">VEX Flashlight</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/image3.png" alt="VEX Cortex Flashlight piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2210.html">276-2210</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>Not Compatible</p>
+<p><span class="wysiwyg-font-size-small">replaced with the V5 Optical Sensor</span></p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">VEX LCD Display</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/VEX LCD.jpg" alt="VEX Cortex LCD Display piece." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">276-2273</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>Not Compatible</p>
+<p><span class="wysiwyg-font-size-small">replaced with the EXP Brain's Built-In LCD</span></p>
+</td>
+</tr>
+<tr style="height: 22px;">
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">Programming Hardware Kit</td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><img src="./Cortex to EXP – VEX_files/276-2186-programming-hardware-kit.webp" alt="VEX Cortex Programming Hardware Kit that contains two cables and a Programming Module." tabindex="0"></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;"><a href="https://www.vexrobotics.com/276-2186.html">276-2186</a></td>
+<td class="wysiwyg-text-align-center" style="width: 25%; height: 22px;">
+<p>Not Compatible</p>
+<p><span class="wysiwyg-font-size-small">replaced with the USB-C Cable</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>*Power output from the 393 Motors and Servos will be reduced. They will be most useful for non-drivetrain functions.</p>
+<p>Mostly all of the Cortex motors and sensors you find value in are compatible with the EXP Brain and System. Once plugged into the EXP Brain, you can either take control of them through the <a href="https://kb.vex.com/hc/en-us/articles/4415762893972-Using-the-Sensor-Dashboard-on-the-EXP-Brain">Brain’s Device menu</a>, allowing you to see and control all electronics currently plugged into the Brain, or by using VEXcode EXP. VEXcode EXP replaces ROBOTC, and allows you to configure and code your electronics using either Blocks, C++, or Python.</p>
+<p><img style="“max-width: 500px;" src="./Cortex to EXP – VEX_files/image21.png" alt="VEXcode EXP is shown with the Devices menu opened and the Add a Device button selected. There is a list of devices that can be used with EXP, including EXP electronics and Cortex electronics." tabindex="0"></p>
+<p><a href="https://kb.vex.com/hc/en-us/categories/4414790180884-EXP?sc=vexcode-exp">View this section from the VEX Library</a> for more information on VEXcode EXP.&nbsp;</p>
+<h2 id="exp-electronics-header-5">EXP Electronics</h2>
+<p>In addition to all of the Cortex electronics that you may continue to use, there are also a number of improved EXP Motors and Sensors. The Smart Ports provide more complex sensing which results in more accurate data when compared to the Cortex Sensors. The following list includes the Motors and Sensors gained when upgrading to the base EXP Kit.</p>
+<div class="row two-col-row">
+<div class="column column--md-8">
+<p><img src="./Cortex to EXP – VEX_files/image10.png" alt="VEX EXP Optical Sensor piece." tabindex="0"></p>
+</div>
+<div class="column column--md-4">
+<p>The <a href="https://kb.vex.com/hc/en-us/articles/4415762989332-Using-Optical-Sensor-with-VEX-EXP">V5 Optical Sensor</a> is a combination of the following sensors:</p>
+<ul>
+<li>Ambient light sensor</li>
+<li>Color Sensor</li>
+<li>Proximity Sensor</li>
+</ul>
+<p>The Optical Sensor has a white LED to assist color detection in low light conditions, and can function as a flashlight. The Optical Sensor uses a Smart Port and allows for real-time sensor feedback through the usage of the EXP Brain’s Sensor Dashboard.</p>
+</div>
+</div>
+<div class="row two-col-row">
+<div class="column column--md-8">
+<p><img src="./Cortex to EXP – VEX_files/image6.png" alt="VEX EXP Distance Sensor piece." tabindex="0"></p>
+</div>
+<div class="column column--md-4">
+<p>The <a href="https://kb.vex.com/hc/en-us/articles/4415763007380-Using-Distance-Sensor-with-VEX-EXP">V5 Distance Sensor</a> uses a pulse of classroom-safe laser light to measure the distance from the front of the sensor to an object.</p>
+<p>It can also:</p>
+<ul>
+<li>detect an object and determine the relative size of the object as small, medium, or large</li>
+<li>used to calculate a robot’s approach speed of the robot/sensor as it moves toward an object</li>
+</ul>
+<p>The Distance Sensor uses a Smart Port and allows for real-time sensor feedback through the usage of the EXP Brain’s Sensor Dashboard.</p>
+</div>
+</div>
+<div class="row two-col-row">
+<div class="column column--md-8">
+<p><img src="./Cortex to EXP – VEX_files/image7.png" alt="VEX EXP Bumper Switch piece." tabindex="0"></p>
+</div>
+<div class="column column--md-4">
+<p>The <a href="https://kb.vex.com/hc/en-us/articles/4415784141716-Using-Bumper-Switch-with-VEX-EXP">Bumper Switch v2</a> is a single digital switch with a spring-loaded bumper which can be pushed in to change the state of the switch. This switch requires only a light touch to activate and is one of the 3-Wire series of sensors.</p>
+<p>The Bumper Switch uses a 3-Wire Port and allows for real-time sensor feedback through the usage of the EXP Brain’s Sensor Dashboard.</p>
+</div>
+</div>
+<div class="row two-col-row">
+<div class="column column--md-8">
+<p><img src="./Cortex to EXP – VEX_files/image16.png" alt="VEX V5 Smart Motor piece." tabindex="0"></p>
+</div>
+<div class="column column--md-4">
+<p>The <a href="https://kb.vex.com/hc/en-us/articles/10002101702932-Understanding-V5-Smart-Motor-5-5W-Performance">V5 Smart Motor (5.5W)</a> delivers 5.5W of power and precision, designed to perform reliably, effectively, and most importantly, safely in the classroom.</p>
+<p>The V5 Smart Motor (5.5W) uses a Smart Port and allows for real-time sensor feedback through the usage of the EXP Brain’s Sensor Dashboard.</p>
+<p>With an integrated encoder measuring at 960ticks/rev, users can control the motor’s direction, speed, acceleration, position, and torque limit all without the use of a Motor Controller 29.</p>
+</div>
+</div>
+                            </div>
+                        </div>
+                        <div class="article__attachments">
+                            
+                        </div>
+                    </article>
+                    <div class="callout-box-pd text-center">
+                        <p>For more information, help, and tips, check out the many resources at <a href="https://pd.vex.com/">VEX Professional Development Plus</a></p>
+                    </div>
+                    <div class="meta-group text-center">
+                        <p class="fst-italic">Last Updated: <span class="meta-data"><time datetime="2025-08-06T17:33:07Z" title="08/07/2025, 05:33" data-format="LL" data-datetime="calendar">August 7, 2025</time></span></p>
+                    </div>
+                    
+                    
+                    <div class="article__share">
+  <ul class="share">
+    <li><a href="https://www.facebook.com/share.php?title=Upgrading+from+Cortex+to+EXP&amp;u=https%3A%2F%2Fkb.vex.com%2Fhc%2Fen-us%2Farticles%2F13559808395412-Upgrading-from-Cortex-to-EXP" class="share-facebook">Facebook</a></li>
+    <li><a href="https://twitter.com/share?lang=en&amp;text=Upgrading+from+Cortex+to+EXP&amp;url=https%3A%2F%2Fkb.vex.com%2Fhc%2Fen-us%2Farticles%2F13559808395412-Upgrading-from-Cortex-to-EXP" class="share-twitter">Twitter</a></li>
+    <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=VEX+Robotics&amp;title=Upgrading+from+Cortex+to+EXP&amp;url=https%3A%2F%2Fkb.vex.com%2Fhc%2Fen-us%2Farticles%2F13559808395412-Upgrading-from-Cortex-to-EXP" class="share-linkedin">LinkedIn</a></li>
+  </ul>
+
+</div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+</div>
+
+  </main>
+
+  
+<!-- /.layout -->
+<footer class="footer container">
+  <div class="container-inner footer__inner">
+    <div class="row clearfix">
+      <div class="column column--sm-12 column--lg-3 text-center">
+        <a href="https://www.innovationfirst.com/" target="_blank"><img class="footer--logo" src="./Cortex to EXP – VEX_files/862e8d0f47452c217524f1ff033f24a379662980.svg" alt="Innovation First, International"></a>
+      </div>
+      <div class="column column--sm-12 column--lg-6 footer-text text-center">
+        <p>Educational content is made freely and publicly available by VEX Robotics, Inc. solely for educational use and may not be reproduced, modified and redistributed without attribution to VEX Robotics. Educational content, or any portion thereof, may not be used for monetary gain without the explicit consent of VEX Robotics.</p>
+
+      <p>VEX and VEX Robotics are trademarks or service marks of Innovation First, Inc. <a style="font-weight: normal; color: #0b5a92;" href="https://www.vexrobotics.com/copyright-notice" data-cmp-ab="2">©2025</a>. All Rights Reserved. VEX Robotics, Inc. is a subsidiary of Innovation First International, Inc. All other product names / marks of others are the property of their respective owners. Patents and / or Patents Pending - <a style="font-weight: normal; color: #0b5a92;" href="https://www.innovationfirst.com/patents" data-cmp-ab="2">innovationfirst.com/patents</a><br><a style="font-weight: normal; color: #0b5a92;" href="https://kb.vex.com/stemlabs/privacy-policy">Site Privacy Policy</a> /<a style="font-weight: normal; color: #0b5a92;" href="https://kb.vex.com/stemlabs/terms-and-conditions"> Site Terms of Use</a> / <a style="font-weight: normal; color: #0b5a92;" href="https://kb.vex.com/stemlabs/cookie-policy">Cookie Policy</a> / <a style="font-weight: normal; color: #0b5a92;" href="https://www.vexrobotics.com/software-privacy-policy" data-cmp-ab="2">Software Privacy Policy</a> / <a style="font-weight: normal; color: #0b5a92;" href="https://accessibility.vex.com/" data-cmp-ab="2">Accessibility Statement</a></p>
+      </div>
+      <div class="column column--sm-12 column--lg-3">
+        <p class="footer__social-links text-center">
+          
+          <a href="https://www.facebook.com/vexrobotics" target="_blank" class="footer-social-link"><img src="./Cortex to EXP – VEX_files/baf7041372543dc8ba6232350ea9fc7c8d0fc7ae.svg" alt="Visit us on Facebook!"></a>
+          
+          
+          <a href="https://www.twitter.com/vexrobotics" target="_blank" class="footer-social-link"><img src="./Cortex to EXP – VEX_files/5bd1129ed9d2802f3e6e70bf539f826b360c2b48.png" alt="Visit us on Twitter!"></a>
+          
+          
+          <a href="https://www.instagram.com/vexrobotics" target="_blank" class="footer-social-link"><img src="./Cortex to EXP – VEX_files/8cc67dbe8200d35eec4e68c3d013462c33454687.svg" alt="Visit us on Instagram!"></a>
+          
+          
+          <a href="https://www.youtube.com/vexroboticstv" target="_blank" class="footer-social-link"><img src="./Cortex to EXP – VEX_files/4bf57ee62c762767a5b3077ea95b438309841778.svg" alt="Visit us on YouTube!"></a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="feedbackModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="feedBackFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="feedBackFormLabel">VEX Library Feedback Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body">
+              <form id="feedbackForm" action="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#" method="POST">
+              <!-- Intro Text -->
+              <p style="color: #000000;font-weight:400">We value your feedback! Use this form to share suggestions, compliments, or report issues with the VEX Library. Your input help us enhance future experiences.</p>
+              <p style="color: #000000;font-weight:400">If you are experiencing technical issues or require customer support, please visit <a href="https://www.vexrobotics.com/support" target="_blank">support.vex.com</a>.</p>
+
+                <!-- Feedback Options -->
+                <ul class="feedback-options list-unstyled d-flex justify-content-evenly" style="display: flex; justify-content: space-around; margin-bottom: 1.5em;">
+                    <div class="col-lg-4">
+                        <li class="feedback-option happy-feedback happy-face" id="happyFace" title="Send a Smile" data-feedback="Happy">
+                          <svg width="100%" height="100%" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.85 30.85" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio=""><title>Send a Smile</title><path class="face" fill="" d="M30.85,15.42A15.43,15.43,0,1,1,15.42,0,15.43,15.43,0,0,1,30.85,15.42Zm-2.57,0A12.86,12.86,0,1,0,15.42,28.28,12.87,12.87,0,0,0,28.28,15.42Zm-5.14-5.14a2.58,2.58,0,1,1-2.57-2.57A2.56,2.56,0,0,1,23.14,10.28Zm-10.29,0a2.57,2.57,0,1,1-2.57-2.57A2.56,2.56,0,0,1,12.85,10.28ZM22.77,19a7.7,7.7,0,0,1-14.7,0,1.28,1.28,0,1,1,2.45-.76,5.14,5.14,0,0,0,9.8,0A1.3,1.3,0,0,1,22,17.41,1.27,1.27,0,0,1,22.77,19Z"></path></svg>                        </li>
+                          <div class="svg-container"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <li class="feedback-option sad-feedback sad-face" id="sadFace" title="Send a Frown" data-feedback="Sad">
+                          <svg width="100%" height="100%" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.85 30.85" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio=""><title>Send a Frown</title><path class="face" fill="" d="M7.71,10.28a2.57,2.57,0,1,1,2.57,2.57A2.57,2.57,0,0,1,7.71,10.28Zm10.29,0a2.57,2.57,0,1,1,2.57,2.57A2.56,2.56,0,0,1,18,10.28Zm2.32,12.24a5.13,5.13,0,0,0-9.8,0,1.28,1.28,0,0,1-2.45-.77,7.71,7.71,0,0,1,14.71,0A1.28,1.28,0,0,1,22,23.36a1.32,1.32,0,0,1-.39.06A1.31,1.31,0,0,1,20.32,22.52ZM2.57,15.42A12.86,12.86,0,1,0,15.43,2.57,12.87,12.87,0,0,0,2.57,15.42ZM0,15.42A15.43,15.43,0,1,1,15.43,30.85,15.43,15.43,0,0,1,0,15.42Z"></path></svg>                        </li>
+                           <div class="svg-container"></div>
+                    </div>
+                <!-- Checkmark SVG  -->
+                <div id="checkmarkContainer" class="col-lg-4 d-none" style="margin-right: 10rem;margin-top: 1rem;">
+                    <svg width="20%" height="60%" class="reactionCheckmark hide sc-kpOJdX kdyqdg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.85 30.85" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMid meet">
+                      <title>Selected</title>
+                    <path fill="#2f92f7" d="M27.4,1.31a2.58,2.58,0,0,1,2.14.51,3.13,3.13,0,0,1,1.19,2A2.91,2.91,0,0,1,30.21,6L14.91,28.36A3.07,3.07,0,0,1,13,29.54a2.52,2.52,0,0,1-2.1-.51,40.64,40.64,0,0,1-3.11-3.15c-1.67-1.8-3.25-3.53-4.73-5.21L.79,18.16A3.07,3.07,0,0,1,0,16a2.93,2.93,0,0,1,.88-2.15A2.73,2.73,0,0,1,2.93,13a2.66,2.66,0,0,1,2,1l7.32,7.91L25.55,2.49A3,3,0,0,1,27.4,1.31Z"></path>
+                    </svg>
+                </div>
+                </ul>
+                <!-- Feedback Textarea -->
+                <div class="mb-3">
+                    <label for="feedback" style="color: #000000;font-weight:600;margin-bottom:2px;">Please share your feedback below</label>
+                      <p style="color: #000000;font-size: small;margin-bottom: 0.4rem;">
+                    <em> Note: the current URL will be shared with your message</em></p>
+                    <textarea id="feedback" name="feedback" class="form-control mb-2" placeholder="Your Feedback"></textarea>
+                </div>
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="name" style="color: #000000;font-weight:600">Please leave your name below (optional)</label>
+                    <input type="text" id="name" name="name" class="form-control mb-2" placeholder="Your Name">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3" id="emailContainer">
+                    <label for="email" style="color: #000000;font-weight:600">Please provide your email address (optional)</label>
+                    <input type="email" id="email" name="email" class="form-control mb-2" placeholder="Your Email">
+                    <div class="form-text" style="color: #000000;font-weight:400">
+                        By including your email address, you agree that VEX can send you emails if we have questions about your feedback.
+                    </div>
+                </div>
+                 <input type="hidden" id="pageURL" name="pageURL">
+                <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+                    <div class="mt-2">
+                        <a href="https://www.vexrobotics.com/software-privacy-policy" target="_blank">Privacy Policy&nbsp;&gt;</a>
+                    </div>
+                </div>
+            </form></div>
+            
+        </div>
+    </div>
+</div>
+  <button class="feedbackFormButton">Feedback</button>
+</footer>
+
+
+<a href="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP#" class="scroll-to-top fa fa-angle-up" data-scroll-to-top=""></a>
+
+
+
+
+
+  <!-- / -->
+
+  
+  <script src="./Cortex to EXP – VEX_files/en-us.6d6985edaa263eee9a6b.js.download"></script>
+  <script src="./Cortex to EXP – VEX_files/without_iframe.js.download" data-brand-id="360002751612" data-return-to="https://kb.vex.com/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP" data-theme="hc" data-locale="en-us" data-auth-origin="360002751612,true,true"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"vexroboticshelp","environment":"production","name":"Innovation First International, Inc."};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":"","role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":null,"shared_csrf_token":null},"usage_tracking":{"event":"article_viewed","data":"BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGwrCJQIkCNVDDoKX21ldGF7DDoPYWNjb3VudF9pZGkDzbKPOhNoZWxwX2NlbnRlcl9pZGwrCMQhtdFTADoNYnJhbmRfaWRsKwh8DNbRUwA6DHVzZXJfaWQwOhN1c2VyX3JvbGVfbmFtZUkiDkFOT05ZTU9VUwY7BlQ7AEkiCmVuLXVzBjsGVDoaYW5vbnltb3VzX3RyYWNraW5nX2lkMA==--e52459b5feb8867f81a464f23f008958ca8da4c6","url":"https://kb.vex.com/hc/activity"},"current_record_id":"13559808395412","current_record_url":"/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP","current_record_title":"Upgrading from Cortex to EXP","current_text_direction":"ltr","current_brand_id":360002751612,"current_brand_name":"VEX Robotics","current_brand_url":"https://vexroboticshelp.zendesk.com","current_brand_active":true,"current_path":"/hc/en-us/articles/13559808395412-Upgrading-from-Cortex-to-EXP","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_multi_language_help_center":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_help_center_auth_enabled":false,"embeddables_connect_ipms":false},"answer_bot_subdomain":"static","general_settings_url":"https://kb.vex.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://vexroboticshelp.zendesk.com/knowledge/user_segments?brand_id=360002751612","has_gather":true,"has_ckeditor":false,"has_community_enabled":false,"has_community_badges":true,"has_community_post_content_tagging":false,"has_gather_content_tags":true,"has_guide_content_tags":true,"has_user_segments":true,"has_answer_bot_web_form_enabled":true,"has_garden_modals":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-2-preview","is_preview":false,"has_alternate_templates":true,"arrange_articles_url":"https://vexroboticshelp.zendesk.com/knowledge/arrange?brand_id=360002751612","article_verification_url":"https://vexroboticshelp.zendesk.com/knowledge/verification?brand_id=360002751612","has_article_verification":true,"guide_language_settings_url":"https://kb.vex.com/hc/admin/language_settings?locale=en-us","docs_importer_url":"https://vexroboticshelp.zendesk.com/knowledge/import_articles?brand_id=360002751612","content_tags_url":"https://vexroboticshelp.zendesk.com/knowledge/content_tags?brand_id=360002751612","community_badges_url":"https://vexroboticshelp.zendesk.com/knowledge/community_badges?brand_id=360002751612","community_settings_url":"https://vexroboticshelp.zendesk.com/knowledge/community_settings?brand_id=360002751612","gather_plan_state":"subscribed","search_settings_url":"https://vexroboticshelp.zendesk.com/knowledge/search_settings?brand_id=360002751612","has_search_settings_in_plan":true,"theming_api_version":1,"theming_settings":{"toggle_translations":false,"body_bg":"#fff","brand_primary":"#D7262D","brand_secondary":"#107CD5","text_color":"#2c2d30","link_color":"rgba(0, 107, 180, 1)","button_color_1":"#d7262d","button_color_2":"#fff","brand_info":"#5bc0de","brand_success":"#0c9","brand_warning":"#fad782","brand_danger":"#ff5252","font_size_base":"16px","font_family_base":"'Lato', sans-serif","line_height_base":"1.5","border_radius_base":"4px","border_width":"2px","logo":"/hc/theming_assets/01HZPAVQWF13AR5SN8W36HJVMD","logo_height":"50px","favicon":"/hc/theming_assets/01HZPAVR1K5R5RDV2J60YCNHD6","toggle_help_center_title":true,"help_center_title":"","topbar_bg":"#999","topbar_text_color":"#fff","topbar_link_color":"#0000EE","topbar_link_text":"","topbar_link_url":"#","footer_bg":"#E6E6E6","footer_text_color":"#999","footer_link_color":"#0000EE","footer_social_link_color":"#0000EE","toggle_footer_creator_text":true,"footer_social_icon_height":"16px","toggle_custom_blocks":true,"toggle_promoted_articles":true,"toggle_category_list":true,"category_list_type":"default","toggle_recent_activities":true,"hero_unit_bg":"#ffffff","hero_unit_mask_bg":"#1f3249","hero_unit_mask_opacity":"0.4","hero_homepage_pattern":"/hc/theming_assets/01HZPAVR5DEX1XTAXB9Y4KPJS8","hero_title":"STEM Library","search_placeholder":"Search the STEM Library...","icon_height":"80px","custom_block_1_toggle":true,"custom_block_1_type":"custom","custom_block_1_icon":"/hc/theming_assets/01HZPAVR9VP3HAS0P0TWJA59S7","custom_block_1_title":"FAQ","custom_block_1_subtitle":"Questions? Find the answers to any question.","custom_block_1_url":"#","custom_block_2_toggle":true,"custom_block_2_type":"custom","custom_block_2_icon":"/hc/theming_assets/01HZPAVRDSMH14M0BECQM3YYF0","custom_block_2_title":"Guides","custom_block_2_subtitle":"Need help? We have you covered.","custom_block_2_url":"#","toggle_ifi_icon":true,"ifi_icon":"/hc/theming_assets/01HZPAVRH99RFRKFGH4Q9CP7KN","toggle_facebook_icon":true,"facebook_icon":"/hc/theming_assets/01HZPAVRQGT6602N2KBYKBRVB6","facebook_url":"https://www.facebook.com/vexrobotics","toggle_twitter_icon":true,"twitter_icon":"/hc/theming_assets/01J1AJC13B8X8BJN7QPW5JFDXS","twitter_url":"https://www.twitter.com/vexrobotics","toggle_instagram_icon":true,"instagram_icon":"/hc/theming_assets/01HZPAVS0BHZJPJP11W3B6KG36","instagram_url":"https://www.instagram.com/vexrobotics","toggle_youtube_icon":true,"youtube_icon":"/hc/theming_assets/01HZPAVS4K210124J4DW6G1F0X","youtube_url":"https://www.youtube.com/vexroboticstv","show_articles_in_section":true,"show_article_author":false,"show_article_comments":false,"show_follow_article":true,"show_recently_viewed_articles":true,"show_article_sharing":true,"show_follow_section":true,"show_follow_community_post":true,"show_community_post_sharing":true,"show_follow_community_topic":true},"has_pci_credit_card_custom_field":true,"help_center_restricted":false,"is_assuming_someone_else":false,"flash_messages":[],"user_photo_editing_enabled":true,"user_preferred_locale":"en-us","base_locale":"en-us","login_url":"https://vexroboticshelp.zendesk.com/access?brand_id=360002751612\u0026locale=en-us\u0026return_to=https%3A%2F%2Fkb.vex.com%2Fhc%2F","has_custom_statuses_enabled":false,"has_hc_generative_answers_setting_enabled":true,"has_generative_search_with_zgpt_enabled":false,"has_suggested_initial_questions_enabled":false,"has_guide_service_catalog":true,"has_service_catalog_search_poc":false,"has_service_catalog_itam":false,"has_csat_reverse_2_scale_in_mobile":false,"has_knowledge_navigation":false,"version":"v26609","dev_mode":false};
+</script>
+
+  <script src="./Cortex to EXP – VEX_files/moment-4ef0d82f9fc65c8a28f659aa3430955f.js.download"></script>
+  <script src="./Cortex to EXP – VEX_files/hc_enduser-3c0934afbf7ff7c96af50f838b24b338.js.download"></script>
+  
+  
+
+</body></html>
