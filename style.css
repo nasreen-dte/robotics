@@ -1,0 +1,232 @@
+/* hero  image */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(252, 249, 249);
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 0px 0px;
+    color: black;
+    background-color: #2ec7ad;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #cc2222;
+    color: rgb(243, 20, 20);
+  }
+
+  /* nav bar*/
+   .container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 70px 1fr 1fr 1fr 1fr 1fr ;
+    gap:6px;
+    align-content: center;
+    padding-left: 20px;
+    align-content: center;
+   }
+    .image-logo{
+      display: grid;
+      background-color: 200, 200, 209c;
+      align-content: center;      /*align vertical */
+      justify-content: center;    /*align horizontal */
+  }     
+ .HOME{
+    display: grid;
+    background-color: #eb1515;
+    align-content: center;      /*align vertical */
+    justify-content: center;    /*align horizontal */
+    
+  }
+  .Teams{
+    display: grid;
+    background-color: #128eec;
+    align-content: center;      /*align vertical */
+    justify-content: center;    /*align horizontal */
+  }
+ .Robots{
+  display: grid;
+  background-color: #72f83d;
+  align-content: center;      /*align vertical */
+  justify-content: center;    /*align horizontal */
+ }
+
+.Competition{
+  display: grid; 
+  background-color: #dfd224;
+  align-content: center;      /*align vertical */
+  justify-content: center;    /*align horizontal */
+}
+.Tutorials{
+  display: grid;
+  background-color: #20e7b6;
+  align-content: center;      /*align vertical */
+  justify-content: center;    /*align horizontal */
+}
+
+.text-nasreen{
+    background-color: 244, 250, 2509;
+    align-content: center;      /*align vertical */
+    justify-content: center;    /*align horizontal */
+    margin-left: 350px;
+    margin-right: 350px;
+    
+}
+
+  /* Style the footer */
+  .footer { 
+    background-color: #6d6b6b;
+    padding: 20px;
+    text-align: center;
+    color: rgb(21, 20, 20);
+     border-right: none;
+}
+
+article {
+  float: left;
+  padding: 60px;
+  width: 60%;
+  background-color: #e8e8ee;
+  height: 300px; /* only for demonstration, should be removed */
+}
+/* nav bar*/
+  .container2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+    align-content: left;
+    padding-left: 70px;
+   
+   }
+
+   .text-nasreen2{
+    background-color: 244, 250, 2509;
+    align-content: center;      /*align vertical */
+    justify-content: center;    /*align horizontal */
+    margin-left: 0px;
+    margin-right: 90px;
+}
+/* nav bar*/
+  .container3{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 40px;
+    align-content: left;
+    padding-left: 70px;
+   
+   }    
+.text-nasreen3{
+    background-color: 244, 250, 2509;
+    align-content: center;      /*align vertical */
+    margin-left: 200px;
+    
+}
+/* nav bar*/
+.container4{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr ;
+  gap: 0px;
+  align-content: 100px;
+  padding-left:200px;
+ 
+ }    
+.text-nasreen4{
+    background-color: 244, 250, 2509;
+    align-content: center;      /*align vertical */
+    margin-left: 20px;
+
+  }
+
+
+
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      
+    .cards-container{
+      margin-top: 50px;
+      display: grid;
+      grid-template-rows: grid;
+      grid-template-columns: 1fr  1fr ;
+      gap: 0px;
+      align-content: center;
+      padding-left: 70px;
+
+    }/* nav bar*/
+  .container1{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 40px;
+    align-content: left;
+    padding-left: 70px;
+   
+   }    
+.text-nasreen1{
+    background-color: 244, 250, 2509;
+    align-content: center;      /*align vertical */
+    margin-left: 100px;
+}
